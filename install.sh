@@ -38,7 +38,9 @@ sudo pacman -S starship
 sed -i -e 's/plugins=.*/(git zsh-completions zsh-autosuggestions fast-syntax-highlighting)/g' ~/.zshrc
 
 
-
+##making all scripts for the user of the computer
+chmod +x whoami.sh
+./whoami.sh
 
 
 
