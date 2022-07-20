@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=gruvbox-dark-theme
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/gruvbox-dark.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application  
