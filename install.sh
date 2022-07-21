@@ -26,12 +26,16 @@ sudo pacamn -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mi
 
 
 ##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections 
-
 git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
 
 ##terminal ricing Oh-my-zsh with starship prompt
 chmod +x oh-my-zsh.sh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#sudo chsh $USER -s "/bin/zsh" i will explore it more if i feel oh-my-zsh is bloat
+
+./oh-my-zsh.sh
 
 
 
@@ -44,10 +48,8 @@ chmod +x dotfiles-sync.sh
 ###making scripts executables
 
 cd ~/.local/share/applications/ && chmod +x dark.desktop gruvbox-dark.desktop light.desktop mint.desktop 
-
 cd && chmod +x .cright.sh .dark.sh .mint.sh .ftp2.sh .cleft.sh .ftp.sh .conkydark.sh .gruvbox-dark.sh .themer.sh .conkylight.sh .light.sh
-
-cd ~/.local/share/applications/rice/ && chmod dark.sh  gruvbox-dark.sh  light.sh  mint.sh
+cd ~/.local/share/applications/rice/ && chmod +x dark.sh  gruvbox-dark.sh  light.sh  mint.sh
 
 
 ##for xterm or urxvt
