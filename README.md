@@ -10,10 +10,11 @@ Run :<br />
 `git clone https://github.com/Betweenthelines/my-xfce4-dotfiles.git`   
 
 enter into the directory :<br />
-`cd my-xfce4-dotfiles`
-`chmod +x chaotic install.sh`
+`cd my-xfce4-dotfiles`<br />
+`chmod +x chaotic install.sh`<br />
 to install chaotic AUR ignore if already installed<br />
 `./chaotic`
+<br />
 to install the dotfiles/ricing Arch xfce <br />
 `./install.sh`
 <br />
