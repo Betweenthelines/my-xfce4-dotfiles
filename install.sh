@@ -1,31 +1,14 @@
 ##updating
-sudo pacman -S archlinux-keyring
-sudo pacman -Syy
+sudo pacman -S archlinux-keyring wget
 sudo pacman --noconfirm --needed -Syu
 
 
 
 ##chaotic AUR
+## credits to https://github.com/SharafatKarim/chaotic-AUR-installer
 
-PS3='Do you want to install Chaotic AUR??  (1 to continue) (2 to deny) (3 to exit) IF ALREADY INSTALLED SELECT 2'
-style=("yes" "no" "exit")
-select fav in "${style[@]}"; do
-    case $fav in
-        "yes")
-            echo "Installing Chaotic AUR"
-	    ~/my-xfce4-dotfiles/sh chaotic-AUR.sh  
-            ;;
-        "no")
-            echo "Please delete chaotic-AUR.sh or edit the install.sh by yourself by pressing ctrl+c and running sed -i '8,28d' install.sh"
-	    exit
-            ;;
-        "exit")
-	    echo "User requested exit"
-	    exit
-	    ;;
-        *) echo "invalid option $REPLY";;
-    esac
-done
+chmod +x chaos
+./chaos
 
 
 
