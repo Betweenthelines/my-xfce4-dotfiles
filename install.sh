@@ -7,7 +7,7 @@ sudo pacman --noconfirm --needed -Syu
 
 ##chaotic AUR
 
-PS3='Do you want to install Chaotic AUR?? if already installed HIGHLY RECOMMENDED TO EXIT.'
+PS3='Do you want to install Chaotic AUR??  (1 to continue) (2 to deny) (3 to exit) IF ALREADY INSTALLED SELECT 2'
 style=("yes" "no" "exit")
 select fav in "${style[@]}"; do
     case $fav in
