@@ -5,6 +5,15 @@ XFCE4 is also a prerequisite
 Pre-riced Vanilla Arch flavour
 ![link to image](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/pre-riced.png?raw=true)
 
+
+Post-riced Vanilla Arch I HAVE PICOM ENABLED
+![gruvbox](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/gruvbox-dark.png)
+![mint](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/mint.png)
+![light](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/light.png)
+![dark](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/dark.png)
+
+
+
 Run :<br />
 
 `chmod +x install.sh`
