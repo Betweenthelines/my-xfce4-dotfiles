@@ -20,12 +20,12 @@ My custom Windows Keybindings should also be transferred
 
 a <br />Super + Arrow kews (window tiling)
 b  <br />Super + hjkl (window tiling)
-Super + tab rofi
-Super + 12345 (change workspaces)
-Alt + tab (iconify window)
-Super + Return (open terminal)
-Super + w (firefox)
-Super + f (thunar)
-Ctrl + q (quit the window)
+c <br />Super + tab rofi
+d <br />Super + 12345 (change workspaces)
+e <br />Alt + tab (iconify window)
+f <br />Super + Return (open terminal)
+g <br />Super + w (firefox)
+h <br />Super + f (thunar)
+ <br />Ctrl + q (quit the window)
 
 
