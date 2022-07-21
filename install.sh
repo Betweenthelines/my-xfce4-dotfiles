@@ -1,8 +1,7 @@
 ##updating
 sudo pacman -S archlinux-keyring
 sudo pacman -Syy
-sudo pacman -Syu
-
+sudo pacman --noconfirm --needed -Syu
 
 
 
