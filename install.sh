@@ -19,9 +19,10 @@ echo "[chaotic-aur]" | sudo tee -a ~/Desktop/pacman.conf
 echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a ~/Desktop/pacman.conf
 
 
+sudo pacman -Syyu
 
 ## fonts and gtk themes icons etc
-sudo pacamn -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
+sudo pacamn -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme oh-my-zsh-git starship picom
 
 
 ##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections 
@@ -30,8 +31,11 @@ git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
 
 ##terminal ricing Oh-my-zsh with starship prompt
+
+sudo chsh $USER -s "/bin/zsh"
+
+
 sudo pacman -Rcns grml-zsh-config
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ##zsh plugins installations
 git clone --depth 1 https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
@@ -39,9 +43,6 @@ git clone --depth 1 https://github.com/zdharma-continuum/fast-syntax-highlightin
 git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone --depth 1 https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
-
-sudo chsh -s $(command -v zsh)
-sudo pacman -S starship picom
 
 ##sourcing zsh
 . ~/.zshrc
