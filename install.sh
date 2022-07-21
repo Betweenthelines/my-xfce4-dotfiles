@@ -10,7 +10,7 @@ sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key FBA220DFC880C036
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-##appending pacman.conf##
+##appending /etc/pacman.conf  ##
 
 echo "#" | sudo tee -a /etc/pacman.conf
 echo "#" | sudo tee -a /etc/pacman.conf
@@ -22,7 +22,7 @@ sudo pacman -Syyu
 
 ## fonts and gtk themes icons etc
 sudo pacman -Rcns grml-zsh-config
-sudo pacamn -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme oh-my-zsh-git starship picom
+sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
 
 
 ##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections 
@@ -37,6 +37,8 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 ./oh-my-zsh.sh
 
+## starship prompt zsh I just like it better 
+sudo pacman -S starship picom
 
 
 ###syncing repo 
