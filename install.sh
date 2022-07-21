@@ -12,10 +12,10 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 
 ##appending pacman.conf##
 
-echo "#" | sudo tee -a ~/Desktop/pacman.conf
-echo "#" | sudo tee -a ~/Desktop/pacman.conf
-echo "[chaotic-aur]" | sudo tee -a ~/Desktop/pacman.conf
-echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a ~/Desktop/pacman.conf
+echo "#" | sudo tee -a /etc/pacman.conf
+echo "#" | sudo tee -a /etc/pacman.conf
+echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
+echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a /etc/pacman.conf
 
 
 sudo pacman -Syyu
