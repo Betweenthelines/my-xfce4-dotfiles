@@ -15,6 +15,7 @@ cp cleft.sh ~/.cleft.sh
 cp ftp.sh ~/.ftp.sh
 cp ftp2.sh ~/.ftp2.sh
 cp gruvbox-dark.sh ~/.gruvbox-dark.sh
+cp dark.sh ~/.dark.sh
 cp light.sh ~/.light.sh
 cp mint.sh ~/.mint.sh
 cp themer.sh ~/.themer.sh
