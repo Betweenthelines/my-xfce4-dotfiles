@@ -15,6 +15,12 @@ Post-riced Vanilla Arch I HAVE PICOM ENABLED
 
 
 Run :<br />
+`sudo pacman -S git wget`
+
+`git clone https://github.com/Betweenthelines/my-xfce4-dotfiles.git`   
+
+enter into the directory :<br />
+`cd my-xfce4-dotfiles`
 
 `chmod +x install.sh`
 
