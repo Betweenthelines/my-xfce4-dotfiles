@@ -12,11 +12,11 @@ style=("yes" "no" "exit")
 select fav in "${style[@]}"; do
     case $fav in
         "yes")
-            echo "GOOD  !!!!!!"
+            echo "Installing Chaotic AUR"
 	    ~/my-xfce4-dotfiles/sh chaotic-AUR.sh  
             ;;
         "no")
-            echo "Smart "
+            echo "Please delete chaotic-AUR.sh or edit the install.sh by yourself by pressing ctrl+c and running sed -i '8,28d' install.sh"
 	    exit
             ;;
         "exit")
