@@ -18,8 +18,8 @@ If you want to use picom instead
 
 My custom Windows Keybindings should also be transferred 
 
-a Super + Arrow kews (window tiling)
-b Super + hjkl (window tiling)
+a <br />Super + Arrow kews (window tiling)
+b  <br />Super + hjkl (window tiling)
 Super + tab rofi
 Super + 12345 (change workspaces)
 Alt + tab (iconify window)
