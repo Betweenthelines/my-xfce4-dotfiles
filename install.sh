@@ -7,15 +7,6 @@ sudo pacman --noconfirm --needed -Syu
 ##chaotic AUR
 ## credits to https://github.com/SharafatKarim/chaotic-AUR-installer
 
-chmod +x chaos
-./chaos
-
-
-
-
-
-sudo pacman -Syyu
-
 ## fonts and gtk themes icons etc
 sudo pacman -Rcns grml-zsh-config
 sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
