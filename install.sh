@@ -6,16 +6,29 @@ sudo pacman --noconfirm --needed -Syu
 
 
 ##chaotic AUR
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key FBA220DFC880C036
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
-##appending /etc/pacman.conf  ##
+PS3='Do you want to install Chaotic AUR?? if already installed HIGHLY RECOMMENDED TO EXIT.'
+style=("yes" "no" "exit")
+select fav in "${style[@]}"; do
+    case $fav in
+        "yes")
+            echo "GOOD  !!!!!!"
+	    ~/my-xfce4-dotfiles/sh chaotic-AUR.sh  
+            ;;
+        "no")
+            echo "Smart "
+	    exit
+            ;;
+        "exit")
+	    echo "User requested exit"
+	    exit
+	    ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
-echo "#" | sudo tee -a /etc/pacman.conf
-echo "#" | sudo tee -a /etc/pacman.conf
-echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
-echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a /etc/pacman.conf
+
+
 
 
 sudo pacman -Syyu
@@ -45,6 +58,9 @@ sudo pacman -S starship picom
 chmod +x dotfiles-sync.sh
 ./dotfiles-sync.sh
 
+##shell-color-scripts
+chmod +x shell-color-scripts.sh
+./shell-color-scripts.sh
 
 
 ###making scripts executables
@@ -53,6 +69,12 @@ cd ~/.local/share/applications/ && chmod +x dark.desktop gruvbox-dark.desktop li
 cd && chmod +x .cright.sh .dark.sh .mint.sh .ftp2.sh .cleft.sh .ftp.sh .conkydark.sh .gruvbox-dark.sh .themer.sh .conkylight.sh .light.sh
 cd ~/.local/share/applications/rice/ && chmod +x dark.sh  gruvbox-dark.sh  light.sh  mint.sh
 
+##vim customization
+chmod +x vim-customization.sh
+./vim-customization.sh
+
+##cleaning up
+rm -r shell-color-scripts Xfwm4-Theme-Collections
 
 ##for xterm or urxvt
 xrdb merge ~/.Xresources
