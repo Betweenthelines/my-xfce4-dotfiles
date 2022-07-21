@@ -12,7 +12,9 @@ Run :<br />
 enter into the directory :<br />
 `cd my-xfce4-dotfiles`
 `chmod +x chaotic install.sh`
+to install chaotic AUR ignore if already installed<br />
 `./chaotic`
+to install the dotfiles/ricing Arch xfce <br />
 `./install.sh`
 <br />
 
