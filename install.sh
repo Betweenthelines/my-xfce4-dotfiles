@@ -22,6 +22,7 @@ echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a ~/Desktop/pacma
 sudo pacman -Syyu
 
 ## fonts and gtk themes icons etc
+sudo pacman -Rcns grml-zsh-config
 sudo pacamn -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme oh-my-zsh-git starship picom
 
 
@@ -35,7 +36,6 @@ git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 sudo chsh $USER -s "/bin/zsh"
 
 
-sudo pacman -Rcns grml-zsh-config
 
 ##zsh plugins installations
 git clone --depth 1 https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
@@ -61,6 +61,7 @@ chmod +x dotfiles-sync.sh
 
 
 ###making scripts executables
+
 cd ~/.local/share/applications/ && chmod +x dark.desktop gruvbox-dark.desktop light.desktop mint.desktop 
 
 cd && chmod +x .cright.sh .dark.sh .mint.sh .ftp2.sh .cleft.sh .ftp.sh .conkydark.sh .gruvbox-dark.sh .themer.sh .conkylight.sh .light.sh
@@ -69,8 +70,4 @@ cd ~/.local/share/applications/rice/ && chmod dark.sh  gruvbox-dark.sh  light.sh
 
 
 ##for xterm or urxvt
-xrdb merge .Xresources
-
-
-
-
+xrdb merge ~/.Xresources
