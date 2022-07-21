@@ -4,10 +4,12 @@ mkdir -pv ~/.local/share/applications/rice
 cp terminalrc ~/.local/share/applications/rice/.terminalrc
 cp terminalrc ~/.terminalrc
 ##cp -r oh-my-zsh ~/.oh-my-zsh
+
 cp -r Pictures ~/Pictures
-cd config && cp -r $(ls) ~/.config 
-cd my-xfce4-dotfiles && cp -r urxvt  ~/.urxvt
-cp -r local ~/.local
+cp -rT config ~/.config
+cp -r urxvt  ~/.urxvt
+cp -rT local ~/.local
+
 cp conkydark.sh ~/.conkydark.sh
 cp conkylight.sh ~/.conkylight.sh
 cp cright.sh ~/.cright.sh
