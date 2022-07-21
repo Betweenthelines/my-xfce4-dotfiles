@@ -21,9 +21,8 @@ Run :<br />
 
 enter into the directory :<br />
 `cd my-xfce4-dotfiles`
-
-`chmod +x install.sh`
-
+`chmod +x chaos install.sh`
+`./chaos`
 `./install.sh`
 <br />
 
