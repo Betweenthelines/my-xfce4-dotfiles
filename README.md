@@ -2,6 +2,8 @@
 Arch only xfce4 dotfiles I have not implemented any backup system for another person.<br />
 XFCE4 is also a prerequisite
 
+Pre-riced Vanilla Arch flavour
+![link to image](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/pre-riced.png?raw=true)
 
 Run :<br />
 
