@@ -8,7 +8,7 @@ git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_C
 git clone --depth 1 https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 ##sourcing zsh
-. ~/.zshrc
+#. ~/.zshrc
 
 
 #cd ~/.oh-my-zsh/custom/plugins/
