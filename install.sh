@@ -38,9 +38,9 @@ echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##'
 git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
 
-echo '###syncing repo###' 
+echo '### syncing repo ###' 
 chmod +x ~/my-xfce4-dotfiles/dotfiles-sync.sh
-
+chmod +x ~/my-xfce4-dotfiles/whoami.sh
 while true; do 
 read -p "Do you wish to copy my dotfiles? (Yy/Nn)" yn
     case $yn in
@@ -51,14 +51,11 @@ read -p "Do you wish to copy my dotfiles? (Yy/Nn)" yn
         * ) echo "Please answer yes or no.";;
     esac
 done
-
-
-echo 'installing shell color-scripts'
-chmod +x ~/my-xfce4-dotfiles/shell-color-scripts.sh
+echo '### syncing repos ###' 
 while true; do 
-read -p "Do you wish to install few shell-color-scripts? (Yy/Nn)" yn
+read -p "Do you wish to copy my dotfiles? (Yy/Nn)" yn
     case $yn in
-        [Yy]* ) ~/my-xfce4-dotfiles/shell-color-scripts.sh
+        [Yy]* ) ~/my-xfce4-dotfiles/whoami.sh
                 break;;
         [Nn]* ) echo "Ok cool";
                 break;;
@@ -66,8 +63,7 @@ read -p "Do you wish to install few shell-color-scripts? (Yy/Nn)" yn
     esac
 done
 
-echo '##cleaning up##'
-rm -r shell-color-scripts Xfwm4-Theme-Collections
+
 
 echo 'customizing vim'
 chmod +x ~/my-xfce4-dotfiles/vim-customization.sh
@@ -104,3 +100,19 @@ sudo pacman -S starship picom
 
 ##for xterm or urxvt
 xrdb merge ~/.Xresources
+
+echo 'installing shell color-scripts'
+chmod +x ~/my-xfce4-dotfiles/shell-color-scripts.sh
+while true; do 
+read -p "Do you wish to install few shell-color-scripts? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/shell-color-scripts.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo '##cleaning up##'
+rm -r shell-color-scripts Xfwm4-Theme-Collections
