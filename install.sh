@@ -1,54 +1,106 @@
 ##updating
-sudo pacman -S archlinux-keyring wget
-sudo pacman --noconfirm --needed -Syu
+echo "####################################################################"
+echo "## Updating the system to avoid errors 'dialog' if not installed ###"
+echo "####################################################################"
+
+while true; do 
+read -p "Do you wish to update your system? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) sudo pacman --noconfirm --needed -Syu 
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 
+echo '##chaotic AUR####'
+while true; do 
+read -p "Do you wish to install chaotic-aur? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/chaotic.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
-##chaotic AUR
-## credits to https://github.com/SharafatKarim/chaotic-AUR-installer
-
-## fonts and gtk themes icons etc
+echo 'chaotic aur installed lets update pacman and download some theme, icons & cursors'
+sudo pacman -Syyu
+echo '## fonts and gtk themes icons etc'
 sudo pacman -Rcns grml-zsh-config
 sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
 
 
-##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections 
-git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
+#echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##' 
+#git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
 
-##terminal ricing Oh-my-zsh with starship prompt
-chmod +x oh-my-zsh.sh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo '###syncing repo###' 
+chmod +x ~/my-xfce4-dotfiles/dotfiles-sync.sh
 
-#sudo chsh $USER -s "/bin/zsh" i will explore it more if i feel oh-my-zsh is bloat
+while true; do 
+read -p "Do you wish to copy my dotfiles? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/dotfiles-sync.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
-./oh-my-zsh.sh
 
-## starship prompt zsh I just like it better 
+echo 'installing shell color-scripts'
+chmod +x ~/my-xfce4-dotfiles/shell-color-scripts.sh
+while true; do 
+read -p "Do you wish to install few shell-color-scripts? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/shell-color-scripts.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo '##cleaning up##'
+rm -r shell-color-scripts Xfwm4-Theme-Collections
+
+echo 'customizing vim'
+chmod +x ~/my-xfce4-dotfiles/vim-customization.sh
+while true; do 
+read -p "Do you wish to customize vim? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/vim-customization.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+echo 'installing zsh'
+chmod +x ~/my-xfce4-dotfiles/oh-my-zsh.sh
+while true; do 
+read -p "Do you wish to install zsh? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/oh-my-zsh.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+echo '## starship prompt zsh I just like it better###' 
 sudo pacman -S starship picom
 
 
-###syncing repo 
-chmod +x dotfiles-sync.sh
-./dotfiles-sync.sh
-
-##shell-color-scripts
-chmod +x shell-color-scripts.sh
-./shell-color-scripts.sh
-
-
-###making scripts executables
-
-cd ~/.local/share/applications/ && chmod +x dark.desktop gruvbox-dark.desktop light.desktop mint.desktop 
-cd && chmod +x .cright.sh .dark.sh .mint.sh .ftp2.sh .cleft.sh .ftp.sh .conkydark.sh .gruvbox-dark.sh .themer.sh .conkylight.sh .light.sh
-cd ~/.local/share/applications/rice/ && chmod +x dark.sh  gruvbox-dark.sh  light.sh  mint.sh
-
-##vim customization
-chmod +x vim-customization.sh
-./vim-customization.sh
-
-##cleaning up
-rm -r shell-color-scripts Xfwm4-Theme-Collections
 
 ##for xterm or urxvt
 xrdb merge ~/.Xresources
