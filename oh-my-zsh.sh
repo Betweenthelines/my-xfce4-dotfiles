@@ -12,4 +12,4 @@ git clone --depth 1 https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTO
 
 
 #cd ~/.oh-my-zsh/custom/plugins/
-sed -i -e 's/plugins=.*/(git zsh-completions zsh-autosuggestions fast-syntax-highlighting)/g' ~/.zshrc
+sed -i -e 's/plugins=.*/plugins=(git zsh-completions zsh-autosuggestions fast-syntax-highlighting)/g' ~/.zshrc
