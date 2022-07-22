@@ -11,7 +11,7 @@ shopt -u extglob
 
 ##installing scripts
 
-cd ~/shell-color-scripts/ && sudo make install
+cd .. && sudo make install
 
 
 
