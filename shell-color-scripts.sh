@@ -13,7 +13,6 @@ shopt -u extglob
 ##installing scripts
 
 sudo make install
-cd && 
 
 
 
