@@ -10,3 +10,4 @@ echo "#" | sudo tee -a /etc/pacman.conf
 echo "#" | sudo tee -a /etc/pacman.conf
 echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
 echo "Include = /etc/pacman.d/chaotic-mirrorlist " | sudo tee -a /etc/pacman.conf
+
