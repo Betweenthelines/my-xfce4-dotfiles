@@ -12,8 +12,8 @@ shopt -u extglob
 ##installing scripts
 
 cd .. && sudo make install
-
-
+sudo cp completions/_colorscript /usr/share/zsh/site-functions
+echo "colorscript random" ~/.zshrc
 
 
 
