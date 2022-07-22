@@ -16,6 +16,7 @@ done
 
 
 echo '##chaotic AUR####'
+chmod +x chaotic.sh
 while true; do 
 read -p "Do you wish to install chaotic-aur? (Yy/Nn)" yn
     case $yn in
