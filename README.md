@@ -30,7 +30,8 @@ Post-riced Vanilla Arch I HAVE PICOM ENABLED
 ![mint](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/mint.png)
 ![light](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/light.png)
 ![dark](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/dark.png)
-![Win-95] picom-disabled(https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/u8.png)
+Picom-disabled for retro Win95 feel
+![Win-95](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/u8.png)
 
 
 This mostly makes xfce4 default look like mine. I have not replaced compton with picom. I leave it to users. 
