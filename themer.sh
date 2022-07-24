@@ -1,6 +1,6 @@
 #!/bin/bash
 PS3='Choose your theme style: '
-style=("Light" "Dark" "mint" "gruvbox-dark" "exit")
+style=("Light" "Dark" "mint" "gruvbox-dark" "The-best" "exit")
 select fav in "${style[@]}"; do
     case $fav in
         "Light")
@@ -18,6 +18,10 @@ select fav in "${style[@]}"; do
 	"gruvbox-dark")
             echo "In the woods !!!!!!!"
 	    ~/.gruvbox-dark.sh  
+            ;;
+	"The best")
+            echo "The best rice ever !!!!!!!"
+	    ~/.Win95.sh
             ;;
          "exit")
 	    echo "User requested exit"
