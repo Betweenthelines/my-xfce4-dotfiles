@@ -1,7 +1,7 @@
 
 mkdir -pv ~/.local/share/applications/rice
 
-cp terminalrc ~/.local/share/applications/rice/.terminalrc
+cp terminalrc ~/.local/share/applications/rice/terminalrc
 cp terminalrc ~/.terminalrc
 ##cp -r oh-my-zsh ~/.oh-my-zsh
 
