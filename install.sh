@@ -32,7 +32,7 @@ echo 'chaotic aur installed lets update pacman and download some theme, icons & 
 sudo pacman -Syyu
 echo '## fonts and gtk themes icons etc'
 sudo pacman -Rcns grml-zsh-config
-sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
+sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme scrot flameshot mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme 
 
 
 echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##' 
