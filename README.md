@@ -41,8 +41,10 @@ If you want to use picom instead
 2. open session manager add entry picom just type <br />
 `picom -b` 
 <br />all the prerequisites config are included in the dotfiles
-
-
+3. for the monitor setup just execute monitor.sh
+<br />
+`./monitor.sh`
+<br />
 My custom Windows Keybindings should also be transferred 
 
 <br />Super + Arrow kews (window tiling)
