@@ -1,46 +1,56 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
-;==========================================================
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [colors]
-background = #282828
-background-alt = #1d2021
-foreground = #a89984
-primary = #d79921
-secondary = #689d6a
-alert = #cc241d
-disabled = #504945
+BG =  #212B30
+BG1 = #263035
+BG2 = #2B353A
+BG3 = #303A3F
+BG4 = #353F44
+BG5 = #3A4449
+BG6 = #3F494E
+BGA = #5C6F7B
+FG = #C4C7C5
+AC = #4DD0E1
+BLACK = #000000
+WHITE = #FFFFFF
+RED = #EC7875
+GREEN = #61C766
+YELLOW = #FDD835
+BLUE = #42A5F5
+PURPLE = #BA68C8
+CYAN = #4DD0E1
+TEAL = #00B19F
+AMBER = #FBC02D
+ORANGE = #E57C46
+BROWN = #AC8476
+GRAY = #8C8C8C
+BLUEGRAY = #6D8895
+PINK = #EC407A
+LIME = #B9C244
+INDIGO = #6C77BB
 
-[bar/top]
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+
+[bar/mybar]
+monitor = eDP1
 width = 100%
-height = 18pt
-radius = 0
+height = 24pt
+radius = 6
 
 ; dpi = 96
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.BG}
+foreground = ${colors.FG}
 
 line-size = 3pt
 
-border-size = 0pt
+border-size = 4pt
 border-color = #00000000
 
-padding-left = 1
+padding-left = 0
 padding-right = 1
 
 module-margin = 1
@@ -49,13 +59,13 @@ separator = |
 separator-foreground = ${colors.disabled}
 
 font-0 = monospace;2
+font-1 = FontAwesome:size=10;1
 
-modules-left = xwindow
-modules-right = filesystem pulseaudio memory cpu wlan date
-
+modules-left = xworkspaces xwindow
+modules-center = date
+modules-right = filesystem pulseaudio cpu memory wlan eth 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
 enable-ipc = true
 
 ; tray-position = right
@@ -68,75 +78,102 @@ enable-ipc = true
 
 [module/xworkspaces]
 type = internal/xworkspaces
-
-label-active = %name%
-label-active-background = ${colors.background-alt}
-label-active-underline= ${colors.primary}
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+icon-0 = 1;
+icon-1 = 2;
+icon-2 = 3;
+icon-3 = 4;
+icon-4 = 5;
+icon-default = 
+format = <label-state>
+format-background = ${color.PINK}
+format-font = 1
+label-monitor = %name%
+label-active = 
+label-active-foreground = ${colors.PINK}
+label-occupied = 
+label-occupied-foreground = ${colors.CYAN}
+label-urgent = 
+label-urgent-foreground = ${colors.GREEN}
+label-empty = %icon%
+label-empty-foreground = ${colors.CYAN}
 label-active-padding = 1
-
-label-occupied = %name%
-label-occupied-padding = 1
-
-label-urgent = %name%
-label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
-
-label-empty = %name%
-label-empty-foreground = ${colors.disabled}
+label-occupied-padding = 1
 label-empty-padding = 1
 
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:60:...%
 
+
 [module/filesystem]
 type = internal/fs
 interval = 25
-
 mount-0 = /
-
 label-mounted = %{F#F0C674}%mountpoint%%{F-} %percentage_used%%
+format-mounted-background = ${colors.BG}
+format-mounted-prefix =  
+format-mounted-prefix-font = 2
+format-mounted-prefix-foreground = ${colors.ORANGE}
+format-unmounted-prefix = 
+format-unmounted-prefix-font = 2
+format-unmounted-background = ${colors.BG1}
+format-unmounted-prefix-foreground = ${colors.ORANGE}
 
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.disabled}
 
 [module/pulseaudio]
 type = internal/pulseaudio
-
-format-volume-prefix = "VOL "
-format-volume-prefix-foreground = ${colors.primary}
-format-volume = <label-volume>
-
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = ${colors.BG}
+format-muted = <label-muted>
+format-muted-prefix = 
+format-muted-prefix-font = 2
+format-muted-prefix-foreground = ${colors.BGA}
+format-muted-background = ${colors.BG}
+label-muted = ""
+label-muted-foreground = ${colors.BGA}
+ramp-volume-0 =  
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 =  
+ramp-volume-font = 2
+ramp-volume-foreground = ${colors.INDIGO}
 label-volume = %percentage%%
 
-label-muted = muted
-label-muted-foreground = ${colors.disabled}
 
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
-
 label-layout = %layout%
 label-layout-foreground = ${colors.primary}
-
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-foreground = ${colors.background}
 label-indicator-background = ${colors.secondary}
 
+
+
+
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "RAM "
-format-prefix-foreground = ${colors.primary}
-label = %percentage_used:2%%
+format-prefix = " "
+format-prefix-foreground = ${colors.BLUE}
+label = " %mb_used%"
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
-format-prefix-foreground = ${colors.primary}
+format = <label>
+format-prefix =  
+format-prefix-font = 2
+format-prefix-foreground = ${colors.YELLOW}
+format-background = ${colors.BG}
 label = %percentage:2%%
+
 
 [network-base]
 type = internal/network
@@ -148,7 +185,27 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %essid%
+label-connected = %{F#F0C674}%{F-} %essid% 
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+format-connected = <ramp-signal> <label-connected>
+format-connected-background = ${colors.BG}
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "  "
+format-disconnected-prefix-font = 2
+format-disconnected-foreground = ${colors.BGA}
+format-disconnected-background = ${colors.BG}
+label-disconnected = "%{A1:networkmanager_dmenu &:}Offline%{A}"
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.PURPLE}
+ramp-signal-font = 2
+
 
 [module/eth]
 inherit = network-base
@@ -158,12 +215,15 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 [module/date]
 type = internal/date
 interval = 1
+time = %I:%M %p
+time-alt = %b %d, %G
+format = <label>
+format-prefix = "  "
+format-prefix-font = 2
+format-prefix-foreground = ${colors.CYAN}
+format-background = ${colors.BG}
+label = %time%
 
-date = %H:%M
-date-alt = %Y-%m-%d %H:%M:%S
-
-label = %date%
-label-foreground = ${colors.primary}
 
 [settings]
 screenchange-reload = true
