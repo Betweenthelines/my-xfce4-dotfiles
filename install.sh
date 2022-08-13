@@ -115,4 +115,3 @@ read -p "Do you wish to install few shell-color-scripts? (Yy/Nn)" yn
 done
 
 echo '##cleaning up##'
-rm -r shell-color-scripts Xfwm4-Theme-Collections
