@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Juno-theme
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/Juno.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application  
