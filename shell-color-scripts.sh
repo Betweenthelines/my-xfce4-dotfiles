@@ -11,8 +11,8 @@ shopt -u extglob
 
 ##installing scripts
 
-cd ~/my-xfce4-dotfiles/shell-color-scripts/ && sudo make install
-sudo cp completions/_colorscript /usr/share/zsh/site-functions
+cd ~/my-xfce4-dotfiles/shell-color-scripts/ && sudo make install &&
+sudo cp completions/_colorscript /usr/share/zsh/site-functions &&
 echo "colorscript random" ~/.zshrc
 
 
