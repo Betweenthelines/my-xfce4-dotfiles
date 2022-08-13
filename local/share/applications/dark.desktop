@@ -3,5 +3,5 @@ Name=dark-theme
 Comment=aaaaa
 Exec=/home/dreaming/.local/share/applications/rice/dark.sh
 Icon=text-scriptlet
-Terminal=true
+Terminal=false
 Type=Application  
