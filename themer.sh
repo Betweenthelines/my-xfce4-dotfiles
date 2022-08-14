@@ -1,6 +1,6 @@
 #!/bin/bash
 PS3='Choose your theme style: '
-style=("Light" "Dark" "mint" "gruvbox-dark" "The best" "Juno" "Kripton" "Nordic-bluish" "Nordic-polar" "Robust" "comic" "exit")
+style=("Light" "Dark" "mint" "gruvbox-dark" "The best" "Juno" "Kripton" "Nordic-bluish" "Nordic-polar" "Robust" "Comic" "exit")
 select fav in "${style[@]}"; do
     case $fav in
         "Light")
