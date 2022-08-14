@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=comics-pain
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/comic.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application 
