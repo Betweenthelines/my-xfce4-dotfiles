@@ -14,10 +14,10 @@ cp --backup .Xresources .zshrc All-your-backup &&
 
 
 
-cp -r Pictures ~/Pictures
-cp -rT config ~/.config
-cp -r urxvt  ~/.urxvt
-cp -rT local ~/.local
+cp -Rf Pictures ~/Pictures
+cp -Rf config ~/.config
+cp -Rf urxvt  ~/.urxvt
+cp -Rf local ~/.local
 
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
 find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
@@ -31,5 +31,5 @@ cp ftp.sh ~/.ftp.sh
 cp ftp2.sh ~/.ftp2.sh
 cp themer.sh ~/.local/share/applications/rice/themer.sh
 cp Xresources ~/.Xresources
-cd && chmod +x .conkydark.sh .conkydark.sh .cright.sh .ftp.sh .ftp2.sh .themer.sh .Xresources 
+cd && chmod +x .conkydark.sh .conkydark.sh .cright.sh .ftp.sh .ftp2.sh .Xresources 
 cd ~/.local/share/applications/rice/ && chmod +x $(ls)
