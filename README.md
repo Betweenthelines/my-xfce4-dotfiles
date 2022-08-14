@@ -1,5 +1,6 @@
 # my-xfce4-dotfiles
-Arch only xfce4 dotfiles I have not implemented any backup system for another person.<br />
+Arch only xfce4 dotfiles I have implemented backup system for another person.<br />
+But I urge you to go through my scripts so that you can prepare or any unforseen result<br />
 XFCE4 is also a prerequisite
 
 
@@ -43,7 +44,35 @@ If you want to use picom instead
 <br />all the prerequisites config are included in the dotfiles
 3. for the monitor setup just execute monitor.sh
 <br />
-`./monitor.sh`
+
+`./wallpaper.sh`
+
+
+For those who don't know at all how to change wallpaper of xfce4 from terminal do this <br />
+
+run `xfconf-query -c xfce4-desktop -m`
+<br />
+now open desktop and change wallpaper manually. You will get this line in terminal now <br />
+`set: /backdrop/screen0/monitoreDP1/workspace0/last-image`
+<br />
+this shows backdrop/SCREEN/MONITOR/WORKSPACE/last-image <br />
+
+SCREEN MONITOR & WORKSPACE are important here <br />
+Now run <br />
+`cd my-xfce4-dotfiles`<br />
+`chmod +x wallapaer.sh`<br />
+`./wallpaper.sh` <br />
+
+and type property screen monitor and workspace property which we have noted before. 
+Also please note that the wallpaper script is one time use actually because of my lack of knowledge in coding.
+Also monitor is NOT the one shown in xrandr but one shown with `xfconf-query -c xfce4-desktop -m` this is a limitation of xfce4 for the moment
+
+
+
+
+
+
+
 
 My custom Windows Keybindings should also be transferred 
 
