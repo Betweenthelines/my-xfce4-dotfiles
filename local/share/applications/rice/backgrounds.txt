@@ -1,4 +1,0 @@
-#!bin/bash
-##wallpapers##
-
-$gruvbox-wallpaper = '/home/dreaming/Pictures/Pics/8207799.png'
