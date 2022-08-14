@@ -10,6 +10,8 @@ sed -i -e "s/screen*./$first/g" ~/.local/share/applications/rice/dark.sh
 sed -i -e "s/screen*./$first/g" ~/.local/share/applications/rice/Robust.sh
 sed -i -e "s/screen*./$first/g" ~/.local/share/applications/rice/Nordic-Bluish.sh
 sed -i -e "s/screen*./$first/g" ~/.local/share/applications/rice/Nordic-polar.sh
+sed -i -e "s/screen*./$first/g" ~/.local/share/applications/rice/comic.sh
+
 
 echo "what is  property monitor?"
 read second
@@ -23,6 +25,8 @@ sed -i -e "s/monitore*./$second/g" ~/.local/share/applications/rice/dark.sh
 sed -i -e "s/monitore*./$second/g" ~/.local/share/applications/rice/Robust.sh
 sed -i -e "s/monitore*./$second/g" ~/.local/share/applications/rice/Nordic-Bluish.sh
 sed -i -e "s/monitore*./$second/g" ~/.local/share/applications/rice/Nordic-polar.sh
+sed -i -e "s/monitore*./$second/g" ~/.local/share/applications/rice/comic.sh
+
 
 echo "what is  property workspace?"
 read third
@@ -36,3 +40,4 @@ sed -i -e "s/workspace*./$third/g" ~/.local/share/applications/rice/dark.sh
 sed -i -e "s/workspace*./$third/g" ~/.local/share/applications/rice/Robust.sh
 sed -i -e "s/workspace*./$third/g" ~/.local/share/applications/rice/Nordic-Bluish.sh
 sed -i -e "s/workspace*./$third/g" ~/.local/share/applications/rice/Nordic-polar.sh
+sed -i -e "s/workspace*./$third/g" ~/.local/share/applications/rice/comic.sh
