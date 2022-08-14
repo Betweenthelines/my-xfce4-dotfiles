@@ -1,3 +1,7 @@
+# to people who just want my theme changing scripts
+its located in my local/share/applications/rice/ its themer.sh read through the code to understand it you can use it directly after making it executables.
+
+
 # my-xfce4-dotfiles
 Arch only xfce4 dotfiles I have implemented backup system for another person.<br />
 But I urge you to go through my scripts so that you can prepare or any unforseen result<br />
