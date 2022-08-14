@@ -37,7 +37,7 @@ select fav in "${style[@]}"; do
         "Nordic-bluish")
             echo "..."
 	    ~/.local/share/applications/rice/Nordic-Bluish.sh
-            ;;s
+            ;;
             
         "Nordic-polar")
             echo "Nordic"
@@ -48,7 +48,7 @@ select fav in "${style[@]}"; do
             echo "I personally use this the most"
             ~/.local/share/applications/rice/Robust.sh
             ;;
-            ;;
+            
         "Comic")
             echo "I personally use this the most"
             ~/.local/share/applications/rice/comic.sh
