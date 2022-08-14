@@ -5,10 +5,20 @@ cp terminalrc ~/.local/share/applications/rice/terminalrc
 cp terminalrc ~/.terminalrc
 ##cp -r oh-my-zsh ~/.oh-my-zsh
 
+
+##backing up your files
+[ -d ~/.config ] && mkdir -pv ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M)&& 
+cp --backup .Xresources .zshrc All-your-backup
+[ -d ~/.urxvt ] && mkdir -pv ~/All-your-backup/urxvt-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.urxvt ~/All-your-backup/urxvt-backup-$(date +%Y.%m.%d-%H%M)&& 
+
 cp -r Pictures ~/Pictures
 cp -rT config ~/.config
 cp -r urxvt  ~/.urxvt
 cp -rT local ~/.local
+
+find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
+find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
+
 
 cp conkydark.sh ~/.conkydark.sh
 cp conkylight.sh ~/.conkydark.sh
@@ -16,11 +26,7 @@ cp cright.sh ~/.cright.sh
 cp cleft.sh ~/.cleft.sh
 cp ftp.sh ~/.ftp.sh
 cp ftp2.sh ~/.ftp2.sh
-cp gruvbox-dark.sh ~/.gruvbox-dark.sh
-cp dark.sh ~/.dark.sh
-cp light.sh ~/.light.sh
-cp mint.sh ~/.mint.sh
-cp themer.sh ~/.themer.sh
+cp themer.sh ~/.local/share/applications/rice/themer.sh
 cp Xresources ~/.Xresources
-cd && chmod +x .conkydark.sh .conkydark.sh .cright.sh .ftp.sh .ftp2.sh .gruvbox-dark.sh .dark.sh .light.sh .mint.sh  .themer.sh .Xresources 
+cd && chmod +x .conkydark.sh .conkydark.sh .cright.sh .ftp.sh .ftp2.sh .themer.sh .Xresources 
 cd ~/.local/share/applications/rice/ && chmod +x $(ls)
