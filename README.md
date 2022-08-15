@@ -2,8 +2,8 @@
 do this <br />
 `git clone https://github.com/Betweenthelines/my-xfce4-dotfiles.git`<br />
 now open terminal in the directory my-xfce4-dotfiles and type <br />
-`chmod +x onlythemechanger.sh`<br />
-`./onlythemechanger.sh`<br />
+`chmod +x onlythemechangerARCH.sh`<br />
+`./onlythemechangerARCH.sh`<br />
  
  Also highly recommend to install my colorscipts <br />
  `chmod +x shell-color-scripts.sh` <br />
