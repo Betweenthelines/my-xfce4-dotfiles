@@ -54,7 +54,7 @@ monitor=$(awk '/monitor/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 echo $monitor
 
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/dark.sh
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/rice/light.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/light.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/mint.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/gruvbox-dark.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Win95.sh
