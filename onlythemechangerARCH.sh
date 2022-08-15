@@ -67,4 +67,10 @@ sed -i -e 's/eDP1/'$polymonitor'/g' ~/.config/polybar/config.ini
 ## now to install all the themes requirements
 sudo pacman -S make qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar
 
-echo '#enjoy have a nice day Chadbro#'
+
+echo '##xfwm4 themes hCREDITS TO addy-dclxvi ##' 
+git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
+
+echo "####################################################################"
+echo "############ !!DONE!! ENJOY YOUR DAY CHADBROS  #####################"
+echo "####################################################################"
