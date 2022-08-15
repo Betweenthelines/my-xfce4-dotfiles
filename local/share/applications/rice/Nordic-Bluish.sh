@@ -12,10 +12,10 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-i
 
 
 ##xfce icons
-xfconf-query -c xsettings -p /Net/IconThemeName -s breeze
+xfconf-query -c xsettings -p /Net/IconThemeName -s Vimix-Black-dark
 
 ##xfce style
-xfconf-query -c xsettings -p /Net/ThemeName -s Arc-Dark
+xfconf-query -c xsettings -p /Net/ThemeName -s Nordic-Polar-standard-buttons
 
 ##xfce cursor
 xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Qogir-manjaro
@@ -25,7 +25,7 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Qogir-manjaro
 xfconf-query -c xsettings -p /Gtk/FontName -s 'Source Code Pro for Powerline Semi-Bold Italic 12' 
 
 ##windows tweaks
-xfconf-query -c xfwm4 -p /general/theme -s Arc-Dark
+xfconf-query -c xfwm4 -p /general/theme -s Nordic-bluish-accent-v40
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 ##terminal-dark
@@ -52,18 +52,6 @@ sed -i -e 's/BG =.*/BG =  #353C4A/g' 	config.ini
 sed -i -e 's/FG =.*/FG = #C4C7C5/g' 	config.ini
 
 pkill polybar && ./launch.sh &
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
