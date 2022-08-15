@@ -1,7 +1,27 @@
-mkdir -pv ~/.local/share/applications/rice
-cp terminalrc ~/.local/share/applications/rice/terminalrc
-cp terminalrc ~/.terminalrc
+echo '#############################################################'
+echo '## THIS SCRIPT WILL INSTALL CHAOTIC AUR IN YOUR SYSTEM.######'
+echo '####       SKIP IF ALREADY INSTALLED. choose no         #####'
+echo '#############           SERIOUSLY               #############'
+echo '#############################################################'
+sleep 8
+chmod +x chaotic.sh
+while true; do 
+read -p "Do you wish to install chaotic-aur? (Yy/Nn)" yn
+    case $yn in
+        [Yy]* ) ~/my-xfce4-dotfiles/chaotic.sh
+                break;;
+        [Nn]* ) echo "Ok cool";
+                break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
+sudo pacman -Syyu
+
+mkdir -pv ~/.local/share/applications/rice
+cp terminalrc ~/.local/share/applications/rice/terminalrc &&
+
+[ -d ~/.config/polybar ] && mkdir -pv ~/All-your-backup/config/polybar-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config/polybar ~/All-your-backup/config/polybar-backup-$(date +%Y.%m.%d-%H%M) && 
 [ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
 cp -Rf Pictures ~/Pictures
 cp -Rf local ~/.local
@@ -73,4 +93,7 @@ git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
 echo "####################################################################"
 echo "############ !!DONE!! ENJOY YOUR DAY CHADBROS  #####################"
+echo "####################################################################"
+echo "##   run cd ~/.local/share/applications/rice/ && ./themer.sh     ###"
+echo "####################################################################"
 echo "####################################################################"
