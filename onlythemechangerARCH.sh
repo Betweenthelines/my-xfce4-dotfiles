@@ -24,7 +24,7 @@ cp terminalrc ~/.local/share/applications/rice/terminalrc &&
 [ -d ~/.config ] && mkdir -pv ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && 
 
 
-cp -rT config ~/.config
+cp -rT config ~/.config 
 
 [ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
 cp -rT Pictures ~/Pictures
