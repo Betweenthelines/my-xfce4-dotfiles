@@ -53,18 +53,3 @@ sed -i -e 's/FG =.*/FG = #C4C7C5/g' 	config.ini
 
 pkill polybar && ./launch.sh &
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
