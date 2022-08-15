@@ -21,7 +21,11 @@ sudo pacman -Syyu
 mkdir -pv ~/.local/share/applications/rice
 cp terminalrc ~/.local/share/applications/rice/terminalrc &&
 
-[ -d ~/.config/polybar ] && mkdir -pv ~/All-your-backup/config/polybar-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config/polybar ~/All-your-backup/config/polybar-backup-$(date +%Y.%m.%d-%H%M) && 
+[ -d ~/.config ] && mkdir -pv ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && 
+
+
+cp -Rf config ~/.config
+
 [ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
 cp -Rf Pictures ~/Pictures
 cp -Rf local ~/.local
