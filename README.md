@@ -8,7 +8,8 @@ now open terminal in the directory my-xfce4-dotfiles and type <br />
  Also highly recommend to install my colorscipts <br />
  `chmod +x shell-color-scripts.sh` <br />
  `sudo ./shell-color-scripts.sh` <br />
-  
+ now run 
+ `cd ~/.local/share/applications/rice && ./themer.sh`  <br />
   If you want to edit files open and review they are at ~/.local/share/applications/rice
   
 # my-xfce4-dotfiles
