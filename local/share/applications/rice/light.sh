@@ -7,7 +7,7 @@
 
 ##killall -HUP xfdesktop
 
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s ~/Pictures/wall/light-2.jpg
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s ~/Pictures/wall/light.jpg
 #feh --bg-fill  ~/Pictures/wall/light-2.jpg
 
 
