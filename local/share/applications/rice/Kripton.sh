@@ -63,13 +63,3 @@ pkill polybar && ./launch.sh &
 
 
 
-
-
-
-
-
-
-
-
-
-
