@@ -1,4 +1,4 @@
-# to people who just want my theme changing scripts
+# To ricers who just want my theme changing scripts
 do this <br />
 `git clone https://github.com/Betweenthelines/my-xfce4-dotfiles.git`<br />
 now open terminal in the directory my-xfce4-dotfiles and type <br />
@@ -9,7 +9,7 @@ now open terminal in the directory my-xfce4-dotfiles and type <br />
  `chmod +x shell-color-scripts.sh` <br />
  `sudo ./shell-color-scripts.sh` <br />
   
-  
+  If you want to edit files open and review they are at ~/.local/share/applications/rice
   
 # my-xfce4-dotfiles
 Arch only xfce4 dotfiles I have implemented backup system for another person.<br />
@@ -56,7 +56,7 @@ If you want to use picom instead
 `picom -b` 
 <br />all the prerequisites config are included in the dotfiles
 
-# deprecated. Its all donr automatically by whoami.sh script now. Left here for educational purposes
+# Deprecated. Its all done automatically by whoami.sh script now. Left here for educational purposes
 3. for the monitor setup just execute monitor.sh. You mostly dont need it 
 
 <br /> 
