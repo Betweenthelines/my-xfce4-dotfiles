@@ -37,6 +37,7 @@ sudo pacman -S git curl wget make qogir-gtk-theme-git qogir-icon-theme scrot fla
 echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##' 
 git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
 
+cd && 7z x ~/my-xfce4-dotfiles/themes.7z
 
 echo '### syncing repo ###' 
 chmod +x ~/my-xfce4-dotfiles/dotfiles-sync.sh
