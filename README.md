@@ -5,9 +5,9 @@ now open terminal in the directory my-xfce4-dotfiles and type <br />
 `chmod +x onlythemechanger.sh`<br />
 `./onlythemechanger.sh`<br />
  
- Also highly recommend to install my colorscipts
- `chmod +x shell-color-scripts.sh`
- `sudo ./shell-color-scripts.sh`
+ Also highly recommend to install my colorscipts <br />
+ `chmod +x shell-color-scripts.sh` <br />
+ `sudo ./shell-color-scripts.sh` <br />
   
   
   
