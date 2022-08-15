@@ -24,11 +24,11 @@ cp terminalrc ~/.local/share/applications/rice/terminalrc &&
 [ -d ~/.config ] && mkdir -pv ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && 
 
 
-cp -Rf config ~/.config
+cp -rT config ~/.config
 
 [ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
-cp -Rf Pictures ~/Pictures
-cp -Rf local ~/.local
+cp -rT Pictures ~/Pictures
+cp -rT local ~/.local
 cp themer.sh ~/.local/share/applications/rice/themer.sh
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
 find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
@@ -53,18 +53,18 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/comic.desktop
 monitor=$(awk '/monitor/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml |  sed 's/name//g' |  sed 's/=//g' | sed 's/"//g' | sed 's/monitor0//g')
 echo $monitor
 
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/dark.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/light.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/mint.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/gruvbox-dark.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/The-best.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/comic.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/Juno.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/Kripton.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/Nordic-bluish.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/Nordic-polar.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/Robust.desktop
-sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/comic.desktop
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/dark.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/rice/light.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/mint.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/gruvbox-dark.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Win95.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/comic.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Juno.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Kripton.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Nordic-Bluish.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Nordic-polar.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Robust.sh
+sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/comic.sh
 
 
 screen=$(awk '/screen/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml | sed 's/name=//g' | sed 's/"//g')
@@ -94,6 +94,10 @@ sudo pacman -S make qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icon
 
 echo '##xfwm4 themes hCREDITS TO addy-dclxvi ##' 
 git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
+
+chmod +x ~/.config/polybar/launch.sh
+chmod +x ~/.config/bspwm/bspwmrc
+chmod +x ~/.config/sxhkd/sxhkdrc
 
 echo "####################################################################"
 echo "############ !!DONE!! ENJOY YOUR DAY CHADBROS  #####################"
