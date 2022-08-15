@@ -32,7 +32,7 @@ echo 'chaotic aur installed lets update pacman and download some theme, icons & 
 sudo pacman -Syyu
 echo '## fonts and gtk themes icons etc'
 sudo pacman -Rcns grml-zsh-config
-sudo pacman -S git curl wget qogir-gtk-theme-git qogir-icon-theme scrot flameshot mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme vi vim nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies
+sudo pacman -S git curl wget make qogir-gtk-theme-git qogir-icon-theme scrot flameshot mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme awesome-terminal-fonts fluent-cursor-theme-git cutefish-icons nordic-darker-theme vi vim nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k 
 
 echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##' 
 git clone https://github.com/addy-dclxvi/Xfwm4-Theme-Collections ~/.themes
