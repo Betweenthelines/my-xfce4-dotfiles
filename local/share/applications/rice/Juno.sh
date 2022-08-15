@@ -14,7 +14,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-i
 xfconf-query -c xsettings -p /Net/IconThemeName -s Mint-Y-Dark-Teal
 
 ##xfce style
-xfconf-query -c xsettings -p /Net/ThemeName -s Juno
+xfconf-query -c xsettings -p /Net/ThemeName -s Qogir-Manjaro-Dark
 
 ##xfce cursor
 xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Qogir-manjaro
@@ -24,7 +24,7 @@ xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Qogir-manjaro
 xfconf-query -c xsettings -p /Gtk/FontName -s 'Source Code Pro for Powerline Semi-Bold Italic 12' 
 
 ##windows tweaks
-xfconf-query -c xfwm4 -p /general/theme -s Juno
+xfconf-query -c xfwm4 -p /general/theme -s Qogir-Dark
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 ##terminal-dark
