@@ -56,7 +56,7 @@ If you want to use picom instead
 `picom -b` 
 <br />all the prerequisites config are included in the dotfiles
 
-#deprecated. Its all donr automatically by whoami.sh script now. Left here for educational purposes
+# deprecated. Its all donr automatically by whoami.sh script now. Left here for educational purposes
 3. for the monitor setup just execute monitor.sh. You mostly dont need it 
 
 <br /> 
@@ -86,7 +86,7 @@ Also monitor is NOT the one shown in xrandr but one shown with `xfconf-query -c 
 
 
 
-#My custom Windows Keybindings should also be transferred 
+# My custom Windows Keybindings should also be transferred 
 
 <br />Super + Arrow kews (window tiling)
 <br />Super + hjkl (window tiling)
