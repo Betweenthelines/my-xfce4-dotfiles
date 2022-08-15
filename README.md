@@ -55,8 +55,11 @@ If you want to use picom instead
 2. open session manager add entry picom just type <br />
 `picom -b` 
 <br />all the prerequisites config are included in the dotfiles
-3. for the monitor setup just execute monitor.sh
-<br />
+
+#deprecated. Its all donr automatically by whoami.sh script now. Left here for educational purposes
+3. for the monitor setup just execute monitor.sh. You mostly dont need it 
+
+<br /> 
 
 `./wallpaper.sh`
 
@@ -80,36 +83,10 @@ and type property screen monitor and workspace property which we have noted befo
 Also please note that the wallpaper script is one time use actually because of my lack of knowledge in coding.
 Also monitor is NOT the one shown in xrandr but one shown with `xfconf-query -c xfce4-desktop -m` this is a limitation of xfce4 for the moment
 
-IF you want my polybar setup <br />
-you have to change 2 things go to ~/.config/polybar and open launch.sh<br />
-you will see<br />
-`polybar example 2>&1 | tee -a /tmp/polybar1.log & disown`<br />
-change that to <br />
-`polybar mybar 2>&1 | tee -a /tmp/polybar1.log & disown`<br />
-<br />
-Now open config.ini<br />
-you will see<br />
 
 
 
-`[bar/mybar]
-monitor = eDP1
-width = 100%
-height = 24pt
-radius = 6`
-
-
-
-change eDP1 to your own monitor find it by running `xrandr --listmonitors` <br />
-
-<br />thats it launch by 
-<br />`cd ~/.config/polybar && chmod +x launch.sh && ./launch.sh`
-<br />
-
-
-
-
-My custom Windows Keybindings should also be transferred 
+#My custom Windows Keybindings should also be transferred 
 
 <br />Super + Arrow kews (window tiling)
 <br />Super + hjkl (window tiling)
