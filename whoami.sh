@@ -12,3 +12,5 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Kripton.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Nordic-bluish.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Nordic-polar.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Robust.desktop
+sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/comic.desktop
+
