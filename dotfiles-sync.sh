@@ -14,11 +14,11 @@ cp --backup .Xresources .zshrc All-your-backup &&
 
 
 
-cp -Rf Pictures ~/Pictures
-cp -Rf config ~/.config
-cp -Rf urxvt  ~/.urxvt
-cp -Rf local ~/.local
-
+cp -rT Picture ~/Pictures
+cp -rT config ~/.config
+cp -rT urxvt  ~/.urxvt
+cp -rT local ~/.local
+cp themer.sh ~/.local/share/applications/rice/themer.sh
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
 find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
 
