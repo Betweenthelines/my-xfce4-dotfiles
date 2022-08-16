@@ -27,7 +27,7 @@ cp terminalrc ~/.local/share/applications/rice/terminalrc &&
 cp -rT config ~/.config 
 
 [ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
-cp -rT Pictures ~/Pictures
+cp -rT Picture ~/Pictures
 cp -rT local ~/.local
 cp themer.sh ~/.local/share/applications/rice/themer.sh
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
