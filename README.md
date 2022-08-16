@@ -41,8 +41,8 @@ Pre-riced Vanilla Arch flavour
 
 
 Post-riced Vanilla Arch I HAVE PICOM ENABLED
-![All my colorschemes](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/All-the-colorschemes.jpg)
-![Stacked view](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/stacked%20images.jpg)
+![link to image](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/All-the-colorschemes.jpg)
+![link to image](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/stacked%20images.jpg)
 
 This mostly makes xfce4 default look like mine. I have not replaced compton with picom. I leave it to users. 
 
