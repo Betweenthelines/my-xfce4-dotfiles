@@ -33,3 +33,6 @@ cp themer.sh ~/.local/share/applications/rice/themer.sh
 cp Xresources ~/.Xresources
 cd && chmod +x .conkydark.sh .conkydark.sh .cright.sh .ftp.sh .ftp2.sh .Xresources 
 cd ~/.local/share/applications/rice/ && chmod +x $(ls)
+cd && 7z x ~/my-xfce4-dotfiles/themes.7z &&
+cd && 7z x ~/my-xfce4-dotfiles/icons.7z &&
+chmod +x ~/.config/polybar/launch.sh
