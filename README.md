@@ -32,8 +32,8 @@ to install chaotic AUR ignore if already installed<br />
 to install the dotfiles/ricing Arch xfce <br />
 `./install.sh`
 <br />
-Also there is a zip file named themes.zip you should extract it in ~/.themes folder for Win 95 icons effect
-<br />
+
+
 
 
 Pre-riced Vanilla Arch flavour
@@ -41,13 +41,8 @@ Pre-riced Vanilla Arch flavour
 
 
 Post-riced Vanilla Arch I HAVE PICOM ENABLED
-![gruvbox](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/gruvbox-dark.png)
-![mint](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/mint.png)
-![light](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/light.png)
-![dark](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/dark.png)
-Picom-disabled for retro Win95 feel
-![Win-95](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/u8.png)
-
+![All my colorschemes](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/All-the-colorschemes.jpg)
+![Stacked view](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/stacked%20images.jpg)
 
 This mostly makes xfce4 default look like mine. I have not replaced compton with picom. I leave it to users. 
 
