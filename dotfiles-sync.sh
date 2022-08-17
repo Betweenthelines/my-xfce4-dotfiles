@@ -10,7 +10,7 @@ cp terminalrc ~/.terminalrc
 [ -d ~/.config ] && mkdir -pv ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.config ~/All-your-backup/config-backup-$(date +%Y.%m.%d-%H%M) && 
 cp --backup .Xresources .zshrc All-your-backup &&
 [ -d ~/.urxvt ] && mkdir -pv ~/All-your-backup/urxvt-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/.urxvt ~/All-your-backup/urxvt-backup-$(date +%Y.%m.%d-%H%M) && 
-[ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && 
+[ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M)
 
 
 
