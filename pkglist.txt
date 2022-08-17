@@ -30,3 +30,5 @@ xterm
 polybar
 scrot
 rofi
+viewnior
+webp-pixbuf-loader 
