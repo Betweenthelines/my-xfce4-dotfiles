@@ -25,7 +25,6 @@ cantarell-fonts
 ttf-fira-code 
 nerd-fonts-fira-code 
 ttf-meslo-nerd-font-powerlevel10k 
-ttf-meslo-nerd-font-powerlevel10k 
 xterm 
 polybar
 scrot
