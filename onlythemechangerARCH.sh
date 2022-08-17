@@ -25,13 +25,15 @@ cp terminalrc ~/.local/share/applications/rice/terminalrc &&
 
 cp -rT config ~/.config 
 cp -rT local ~/.local
+[ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M)
+cp -rT Picture ~/Pictures
+
 cp themer.sh ~/.local/share/applications/rice/themer.sh
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
 find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
 
 
 
-[ -d ~/Pictures/wall ] && mkdir -pv ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -Rf ~/Pictures/wall ~/All-your-backup/Pictures-backup-$(date +%Y.%m.%d-%H%M) && cp -rT Picture ~/Pictures
 
 
 ## for executables in menu
@@ -95,7 +97,7 @@ sed -i -e 's/intel_backlight/'$polybacklight'/g' ~/.config/polybar/config.ini
 
 
 # Let's install each package listed in the pkglist.txt file.
-sudo pacman --needed --ask 4 -Sy - < pkglist.txt || error "Failed to install required packages."
+sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar
 
 
 echo '##xfwm4 themes hCREDITS TO addy-dclxvi ##' 
