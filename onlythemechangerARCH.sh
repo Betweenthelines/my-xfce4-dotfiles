@@ -1,8 +1,13 @@
 echo '#############################################################'
+echo '#############################################################'
 echo '## THIS SCRIPT WILL INSTALL CHAOTIC AUR IN YOUR SYSTEM.######'
-echo '####       SKIP IF ALREADY INSTALLED. choose no         #####'
+echo '######       IF CHAOTIC AUR IS ALREADY INSTALLED        #####'
+echo '####       IN YOUR SYSTEM IT IS HIGHLY RECOMMENDED      #####'
+echo '#####      THAT YOU CHOOSE NO TO FOLLOWING PROMPT      ######'
 echo '#############           SERIOUSLY               #############'
 echo '#############################################################'
+echo '#############################################################'
+
 sleep 8
 chmod +x chaotic.sh
 while true; do 
