@@ -1,4 +1,4 @@
-##Naughty wallpaper##
+#!/bin/bash
 
 #xfce wallpaper#
 
