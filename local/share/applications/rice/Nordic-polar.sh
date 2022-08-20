@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-##Naughty wallpaper##
 
 #xfce wallpaper#
 
@@ -14,7 +13,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-i
 xfconf-query -c xsettings -p /Net/IconThemeName -s Qogir-dark
 
 ##xfce style
-xfconf-query -c xsettings -p /Net/ThemeName -s Arc-Darker-solid
+xfconf-query -c xsettings -p /Net/ThemeName -s Arc-Dark
 
 ##xfce cursor
 xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Qogir-manjaro
