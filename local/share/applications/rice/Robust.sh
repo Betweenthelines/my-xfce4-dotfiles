@@ -1,8 +1,6 @@
 #!/bin/bash
 
 
-##Naughty wallpaper##
-
 #xfce wallpaper#
 
 ##killall -HUP xfdesktop
