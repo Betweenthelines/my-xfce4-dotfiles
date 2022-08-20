@@ -85,17 +85,17 @@ Also monitor is NOT the one shown in xrandr but one shown with `xfconf-query -c 
 # My custom Windows Keybindings should also be transferred 
 
 _______________________________________________________________
-<br /> | Super + Arrow kews  |        (window tiling)         | 
-<br /> | Super + hjkl        |        (window tiling)         |  
-<br /> | Super + tab         |        (rofi)                  | 
-<br /> | Super + 12345       |        (change workspaces)     |  
-<br /> | Alt + tab           |        (iconify window)        | 
-<br /> | Super + Return      |        (open terminal)         | 
-<br /> | Super + w           |        (firefox)               | 
-<br /> | Super + f           |        (thunar)                | 
-<br /> | Super + c           |        (quit the window)       | 
-<br /> | Ctrl + Alt + h      |        (htop)                  | 
-<br /> | Ctrl + Alt + r      |        (ranger)                | 
+<br />  Super + Arrow kews          (window tiling)          
+<br />  Super + hjkl                (window tiling)           
+<br />  Super + tab                 (rofi)                   
+<br />  Super + 12345               (change workspaces)       
+<br />  Alt + tab                   (iconify window)         
+<br />  Super + Return              (open terminal)          
+<br />  Super + w                   (firefox)                
+<br />  Super + f                   (thunar)                 
+<br />  Super + c                   (quit the window)        
+<br />  Ctrl + Alt + h              (htop)                   
+<br />  Ctrl + Alt + r              (ranger)                 
 _______________________________________________________________
 
 
