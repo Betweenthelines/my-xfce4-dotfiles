@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-##Naughty wallpaper##
 
 #xfce wallpaper#
 
