@@ -7,7 +7,7 @@
 ##killall -HUP xfdesktop
 
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s ~/Pictures/wall/index.jpg
-feh --bg-fill  w~/Pictures/wall/index.jpg
+#feh --bg-fill  w~/Pictures/wall/index.jpg
 
 ##xfce icons
 xfconf-query -c xsettings -p /Net/IconThemeName -s Chicago95
