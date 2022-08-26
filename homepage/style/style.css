@@ -1,0 +1,134 @@
+/* Custom font */
+@font-face {
+    font-family: Comfortaa;
+    src: url("fonts/Comfortaa-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url("fonts/Comfortaa-Bold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+* {
+    /* font-family: sans-serif; */
+    font-family: Comfortaa;
+}
+
+body {
+    background-image: url("1713614.jpg");
+    background-size: initial;
+    height: 100%;
+    width: 100%;
+}
+
+.mainbox {
+    height: 90%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    /* Center the box */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+    /* Make it prettier */
+    border-radius: 6px;
+    /* padding: 40px; */
+	  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30pt;
+    color: #333333;
+    text-align: center;
+    vertical-align: center;
+}
+
+h2 {
+    color: #333333;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainlist {
+    /* Center the list horizontally */
+    transform: translate(-50%, -50%);
+    /* padding: 20px; */
+    left: 50%;
+    position: absolute;
+    top: 237px;
+    /* Needed so its width is equal to the total of its children's width */
+    display: inline-flex;
+}
+/* rgba(255, 255, 255, 0.7)*/
+.category {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    /* Needed for centering the main list */
+    display: inline-table;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: #333333;
+}
+
+a:hover {
+    color: #B4486C;
+    transition: .5s;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    border-left: 4px solid rgba(255, 255, 255, 0.7);
+    border-right: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+li:hover {
+    color: #B4486C;
+    background-color: #FFFFFF;
+    border-left: 4px solid #FB7C80;
+    transition: .5s;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
