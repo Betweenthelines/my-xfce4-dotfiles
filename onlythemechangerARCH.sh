@@ -56,8 +56,8 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Nordic-bluish.desk
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Nordic-polar.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Robust.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/comic.desktop
-sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/true-dark.sh
-sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/mint-light.sh
+sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/true-dark.desktop
+sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/mint-light.desktop
 
 ##for keybindings
 sed -i -e 's/dreaming/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
