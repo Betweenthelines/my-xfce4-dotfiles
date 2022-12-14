@@ -95,7 +95,9 @@ _______________________________________________________________
 <br />  Super + f                   (thunar)                 
 <br />  Super + c                   (quit the window)        
 <br />  Ctrl + Alt + h              (htop)                   
-<br />  Ctrl + Alt + r              (ranger)                 
+<br />  Ctrl + Alt + r              (ranger) 
+<br />  Ctrl + Shift + (1234567)    (Different themes)
+<br />  
 _______________________________________________________________
 
 
