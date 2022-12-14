@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=mint-light
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/mint-light.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application 

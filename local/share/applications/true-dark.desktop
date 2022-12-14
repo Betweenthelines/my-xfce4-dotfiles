@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=true-dark
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/true-dark.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application 
