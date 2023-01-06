@@ -101,6 +101,9 @@ done
 echo '## starship prompt zsh I just like it better###' 
 sudo pacman -S starship picom
 
+## mpv screenshot directory
+mkdir -pv ~/Pictures/mpv && cp -r /usr/share/doc/mpv/ ~/.config/
+echo 'screenshot-directory="~/Pictures/mpv/"' | tee -a ~/.config/mpv/mpv.conf
 
 
 ##for xterm or urxvt
