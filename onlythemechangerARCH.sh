@@ -58,6 +58,9 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Robust.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/comic.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/true-dark.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/mint-light.desktop
+sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/Everforest.desktop
+
+
 
 ##for keybindings
 sed -i -e 's/dreaming/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
@@ -82,6 +85,7 @@ sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Robust.s
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/comic.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g'  ~/.local/share/applications/rice/true-dark.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/mint-light.sh
+sed -i -e 's/monitoreDP1/'$monitort'/g' ~/.local/share/applications/rice/Everforest.sh
 
 
 
@@ -102,6 +106,7 @@ sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/Robust.desktop
 sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/comic.desktop
 sed -i -e 's/screen0/'$screen'/g'  ~/.local/share/applications/rice/true-dark.sh
 sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/rice/mint-light.sh
+sed -i -e 's/screen0/'$screen0'/g' ~/.local/share/applications/rice/Everforest.sh
 
 
 ## for polybar to work properly
@@ -115,7 +120,8 @@ sed -i -e 's/intel_backlight/'$polybacklight'/g' ~/.config/polybar/config.ini
 
 
 # Let's install each package listed in the pkglist.txt file.
-sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git mpv qogir-icon-theme xcursor-breeze mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar
+sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git mpv qogir-icon-theme xcursor-breeze mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git
+
 
 
 ## mpv screenshot directory
