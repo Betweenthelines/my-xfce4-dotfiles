@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Evverforest
+Comment=aaaaa
+Exec=/home/dreaming/.local/share/applications/rice/Everforest.sh
+Icon=text-scriptlet
+Terminal=false
+Type=Application 
