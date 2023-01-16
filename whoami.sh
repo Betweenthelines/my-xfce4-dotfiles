@@ -15,7 +15,7 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/Robust.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/comic.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/true-dark.desktop
 sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/mint-light.desktop
-
+sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/Everforest.desktop
 
 ##for keybindings
 sed -i -e 's/dreaming/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
@@ -41,6 +41,7 @@ sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/Robust.s
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/comic.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g'  ~/.local/share/applications/rice/true-dark.sh
 sed -i -e 's/monitoreDP1/'$monitor'/g' ~/.local/share/applications/rice/mint-light.sh
+sed -i -e 's/monitoreDP1/'$monitort'/g' ~/.local/share/applications/rice/Everforest.sh
 
 
 screen=$(awk '/screen/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml | sed 's/name=//g' | sed 's/"//g')
@@ -60,6 +61,8 @@ sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/Robust.desktop
 sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/comic.desktop
 sed -i -e 's/screen0/'$screen'/g'  ~/.local/share/applications/rice/true-dark.sh
 sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/rice/mint-light.sh
+sed -i -e 's/screen0/'$screen'/g' ~/.local/share/applications/rice/Everforest.sh
+
 
 ## for polybar to work properly
 polymonitor=$(awk '/monitor/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml |  sed 's/name//g' |  sed 's/=//g' | sed 's/"//g' | sed 's/monitor0//g' | sed 's/monitor//g')
