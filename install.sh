@@ -35,7 +35,8 @@ sudo pacman -Rcns grml-zsh-config
 
 
 # Let's install each package listed in the pkglist.txt file.
-sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git qogir-icon-theme xcursor-breeze mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar
+sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git qogir-icon-theme xcursor-breeze mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons-git cantarell-fonts ttf-fira-code nerd-fonts-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git
+
 
 
 echo '##xfwm4 themes https://github.com/addy-dclxvi/Xfwm4-Theme-Collections##' 
