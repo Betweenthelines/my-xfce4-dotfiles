@@ -1,6 +1,6 @@
 #!/bin/bash
 PS3='Choose your theme style: '
-style=("Light" "Dark" "mint" "gruvbox-dark" "The best" "Juno" "Kripton" "Nordic-bluish" "Nordic-polar" "Robust" "Comic" "exit")
+style=("Light" "Dark" "mint" "mint-light" "gruvbox-dark" "Everforest" "The best" "Juno" "Kripton" "Nordic-bluish" "Nordic-polar" "Robust" "Comic" "true-dark" "exit")
 select fav in "${style[@]}"; do
     case $fav in
         "Light")
@@ -15,9 +15,17 @@ select fav in "${style[@]}"; do
             echo "Nostalgia it is then !!!!!!!"
 	    ~/.local/share/applications/rice/mint.sh
             ;;
+	    "mint-light")
+            echo "Nostalgia it is then !!!!!!!"
+	    ~/.local/share/applications/rice/mint-light.sh
+            ;;
 	"gruvbox-dark")
             echo "In the woods !!!!!!!"
 	   ~/.local/share/applications/rice/gruvbox-dark.sh
+            ;;
+	"Everforest")
+            echo "In the woods !!!!!!!"
+	   ~/.local/share/applications/rice/Everforest.sh
             ;;
         "The best")
             echo "The best rice ever !!!!!!!"
@@ -53,6 +61,11 @@ select fav in "${style[@]}"; do
             echo "I personally use this the most"
             ~/.local/share/applications/rice/comic.sh
             ;;
+         "true-dark")
+            echo "I personally use this the most"
+            ~/.local/share/applications/rice/true-dark.sh
+            ;;
+            
             "exit")
 	    echo "User requested exit"
 	    exit
