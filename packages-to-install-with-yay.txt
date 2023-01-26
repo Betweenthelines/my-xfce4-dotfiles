@@ -1,0 +1,17 @@
+## icons and themes
+bettergruvbox-gtk-theme
+chicago95-gtk-theme-git
+chicago95-icon-theme-git
+gruvbox-dark-icons-gtk
+mint-y-icons-legacy
+xcursor-breeze
+
+## essentials
+lib32-gst-plugins-ugly
+
+## programs or apps
+pixivutil2-git
+showmethekey
+unrpa
+ywatch-git 
+
