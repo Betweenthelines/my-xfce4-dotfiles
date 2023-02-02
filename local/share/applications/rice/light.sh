@@ -32,17 +32,12 @@ xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 #tac .terminalrc | sed '1,2 d' | tac >> ~/Documents/experiment/terminalrc1.txt
 #cd ~/Documents/experiment && mv terminalrc1.txt ~/.config/xfce4/terminal/terminalrc
 
-#cd ~/.config/xfce4/terminal/
-#sed -i -e 's/ColorForeground=.*/ColorForeground=#586e75/g' 	terminalrc
-#sed -i -e 's/ColorBackground=.*/ColorBackground=#fdf6e3/g' 	terminalrc
-#sed -i -e 's/ColorCursor=.*/ColorCursor=#x/g' 			terminalrc
-#sed -i -e 's/ColorPalette=.*/ColorPalette=#fdf6e3;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#586e75;#839496;#dc322f;#859900;#b58900;#268bd2;#6c71c4;#2aa198;#002b36/g' terminalrc
 
 cd ~/.config/xfce4/terminal/
-sed -i -e 's/ColorForeground=.*/ColorForeground=#c7ccd1/g' 	terminalrc
-sed -i -e 's/ColorBackground=.*/ColorBackground=#1c2023/g' 	terminalrc
-sed -i -e 's/ColorCursor=.*/ColorCursor=#c7ccd1/g' 			terminalrc
-sed -i -e 's/ColorPalette=.*/ColorPalette=#1c2023;#c7ae95;#95c7ae;#aec795;#ae95c7;#c795ae;#95aec7;#c7ccd1;#747c84;#c7ae95;#95c7ae;#aec795;#ae95c7;#c795ae;#95aec7;#f3f4f5/g' terminalrc
+sed -i -e 's/ColorForeground=.*/ColorForeground=#404040/g' 	terminalrc
+sed -i -e 's/ColorBackground=.*/ColorBackground=#ffffff/g' 	terminalrc
+sed -i -e 's/ColorCursor=.*/ColorCursor=x/g' 			terminalrc
+sed -i -e 's/ColorPalette=.*/ColorPalette=#ffffff;#c41a15;#007400;#826b28;#0000ff;#a90d91;#318495;#404040;#808080;#c41a15;#007400;#826b28;#0000ff;#a90d91;#318495;#5e5e5e/g' terminalrc
 
 
 ## alacritty
