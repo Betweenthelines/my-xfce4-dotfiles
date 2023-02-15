@@ -63,16 +63,16 @@
       <property name="Print" type="string" value="scrot &apos;screenshot_%Y-%m-%d-%S_$wx$h.png&apos; -e &apos;mv $f ~/Pictures/ScreenShots/ ; viewnior ~/Pictures/ScreenShots/$f&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-terminal -hold  -e &apos;clear &amp;&amp; vnstat -l&apos;"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;w" type="string" value="badwolf file:///home/dreaming/Documents/ricing/dotfiles-2.0/startpage/index.html"/>
-      <property name="&lt;Super&gt;Tab" type="string" value="/home/dreaming/.config/rofi/launchers/type-6/launcher.sh"/>
+      <property name="&lt;Super&gt;Tab" type="string" value="/home/dreaming/.config/rofi/launcher.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;at" type="string" value="/home/dreaming/.local/share/applications/rice/gruvbox-dark.sh"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;dollar" type="string" value="/home/dreaming/.local/share/applications/rice/dark.sh"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;dollar" type="string" value="/home/dreaming/.local/share/applications/rice/Win95.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;asciicircum" type="string" value="/home/dreaming/.local/share/applications/rice/Robust.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;ampersand" type="string" value="/home/dreaming/.local/share/applications/rice/true-dark.sh"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;percent" type="string" value="/home/dreaming/.local/share/applications/rice/Nordic-Bluish.sh"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;percent" type="string" value="/home/dreaming/.local/share/applications/rice/Everforest.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="xfce4-terminal -e &apos;dstat -d&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-terminal --hold  -e &apos;clear &amp;&amp; vnstat -l&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="xfce4-terminal ranger"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;exclam" type="string" value="/home/dreaming/.local/share/applications/rice/mint-light.sh"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;exclam" type="string" value="/home/dreaming/.local/share/applications/rice/light.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;numbersign" type="string" value="/home/dreaming/.local/share/applications/rice/mint.sh"/>    
     </property>
   </property>
