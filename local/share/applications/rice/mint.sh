@@ -32,7 +32,7 @@ cd ~/.config/xfce4/terminal/
 sed -i -e 's/ColorForeground=.*/ColorForeground=#x/g' 	terminalrc
 sed -i -e 's/ColorBackground=.*/ColorBackground=#3c953c953c95/g' 	terminalrc
 sed -i -e 's/ColorCursor=.*/ColorCursor=#867f81c281c2/g' 			terminalrc
-sed -i -e 's/ColorPalette=.*/ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#AD7FA8;#06989a;#d3d7cf;#8E9F7D;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec/g' terminalrc
+sed -i -e 's/ColorPalette=.*/ColorPalette=#000000;#cc0000;#4e9a06;#c4a000;#739FCF;#AD7FA8;#06989a;#d3d7cf;#8E9F7D;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec/g' terminalrc
 
 
 ## alacritty
