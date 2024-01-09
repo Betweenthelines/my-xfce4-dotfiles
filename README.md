@@ -17,7 +17,8 @@ Arch only xfce4 dotfiles I have implemented backup system for another person.<br
 But I urge you to go through my scripts so that you can prepare or any unforseen result<br />
 XFCE4 is also a prerequisite
 
-As of 2023-24 many scripts regarding xfce4-terminal would have break for many users. Its fixed for now but and all colorschemes and script to instantly change colorschemes in xfce4-terminal should work now. If my script has any error in your setup please do inform so I can fix the script. 
+#As of 2023-24 
+Many scripts regarding xfce4-terminal would have break for many users. Its fixed for now but and all colorschemes and script to instantly change colorschemes in xfce4-terminal should work now. If my script has any error in your setup please do inform so I can fix the script. 
 
 Also let me put this in front I do not want to add anything more fancy like custom tint or polybar or any other WM other than xfce. This entire idea was just to make and keep xfce4 beautiful and as modern as any other WM which will inevitebly come in future. XFCE is known for stability so I wanted to provide a stable script for people for my looong time favorite WM XFCE.
 
