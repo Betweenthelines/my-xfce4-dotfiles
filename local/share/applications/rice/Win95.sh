@@ -1,10 +1,9 @@
 #!/bin/bash
-#SCREEN
-xrandr --listactivemonitors | awk -F ' ' 'END {print $1}' | tr -d \:
-#MONITOR
-xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+
+#xfce wallpaper#
+SCREEN=$(xrandr --listactivemonitors | awk 'END {print $1}' | tr -d :)
+MONITOR=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
 #WALLPAPER
-xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set  ~/Pictures/wall/index.jpg
+xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set ~/Pictures/wall/index.jpg
 
 ##xfce icons
 xfconf-query -c xsettings -p /Net/IconThemeName -s Chicago95
