@@ -35,7 +35,7 @@ sudo pacman -Rcns grml-zsh-config
 
 
 # Let's install each package listed in the pkglist.txt file.
-sudo pacman -S xarchiver dool p7zip make qogir-gtk-theme-git mpv qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons cantarell-fonts ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar-git everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git paru
+sudo pacman -S xarchiver dool mint-l-icons p7zip make qogir-gtk-theme-git mpv qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons cantarell-fonts ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar-git everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git paru
 
 paru -S picom-ftlabs-git
 
