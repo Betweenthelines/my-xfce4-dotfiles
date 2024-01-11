@@ -4,7 +4,7 @@ SCREEN=$(xrandr --listactivemonitors | awk 'END {print $1}' | tr -d :)
 MONITOR=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
 #WALLPAPER
 xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set ~/Pictures/wall/740758450.png
-~/Pictures/wall/FFXIII.png
+~/Pictures/wall/26.jpg
 
 ##xfce icons
 xfconf-query -c xsettings -p /Net/IconThemeName -s Vimix-Black-dark
