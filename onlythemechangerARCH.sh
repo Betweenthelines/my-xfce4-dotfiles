@@ -72,7 +72,9 @@ echo $polybacklight
 sed -i -e 's/intel_backlight/'$polybacklight'/g' ~/.config/polybar/config.ini
 
 # Let's install each package listed in the pkglist.txt file.
-sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git mpv qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons cantarell-fonts ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar-git everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git
+sudo pacman -S xarchiver p7zip make qogir-gtk-theme-git mpv qogir-icon-theme mint-themes mint-y-icons vimix-cursors vimix-gtk-themes vimix-icon-theme whitesur-gtk-theme arc-gtk-theme-git arc-solid-gtk-theme fluent-cursor-theme-git cutefish-icons nordic-darker-theme nordic-darker-theme lsd awesome-terminal-fonts ttf-iosevka-nerd xfce4-goodies papirus-icon-theme breeze-icons cantarell-fonts ttf-fira-code ttf-meslo-nerd-font-powerlevel10k ttf-meslo-nerd-font-powerlevel10k xterm polybar-git everforest-gtk-theme-git gruvbox-material-gtk-theme-git gruvbox-material-icon-theme-git paru
+
+paru -S picom-ftlabs-git
 
 ## mpv screenshot directory
 mkdir -pv ~/Pictures/mpv && cp -r /usr/share/doc/mpv/ ~/.config/
