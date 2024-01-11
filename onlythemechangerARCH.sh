@@ -64,11 +64,13 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/Everforest.de
 sed -i -e 's/dreaming/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 
 ## for polybar to work properly
-polymonitor=$(awk '/monitor/ {print $2}' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml |  sed 's/name//g' |  sed 's/=//g' | sed 's/"//g' | sed 's/monitor0//g' | sed 's/monitor//g')
+polymonitor=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
 echo $polymonitor
+
 sed -i -e 's/eDP1/'$polymonitor'/g' ~/.config/polybar/config.ini
 polybacklight=$(ls -1 /sys/class/backlight/)
 echo $polybacklight
+
 sed -i -e 's/intel_backlight/'$polybacklight'/g' ~/.config/polybar/config.ini
 
 # Let's install each package listed in the pkglist.txt file.
