@@ -2,7 +2,7 @@
 SCREEN=$(xrandr --listactivemonitors | awk 'END {print $1}' | tr -d :)
 MONITOR=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
 #WALLPAPER
-xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set ~/Pictures/wall/849941.png
+xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set ~/Pictures/wall/8207799.png
 
 ##xfce icons
 xfconf-query -c xsettings -p /Net/IconThemeName -s Gruvbox-Material-Dark
