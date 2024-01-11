@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=1;x=1903;y=509"/>
+      <property name="length" type="double" value="20.648148148148149"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="31"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="7"/>
+        <value type="int" value="15"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="2"/>
+      </property>
+      <property name="background-alpha" type="int" value="100"/>
+      <property name="enter-opacity" type="uint" value="95"/>
+      <property name="leave-opacity" type="uint" value="95"/>
+      <property name="background-style" type="int" value="0"/>
+      <property name="background-image" type="string" value=""/>
+      <property name="background-color" type="array">
+        <value type="uint" value="56540"/>
+        <value type="uint" value="56026"/>
+        <value type="uint" value="54741"/>
+        <value type="uint" value="65535"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="dark-mode" type="bool" value="true"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="+restart"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="+suspend"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="appearance" type="uint" value="0"/>
+    </property>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="evolution-alarm-notify"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="pragha music player"/>
+        <value type="string" value="simplescreenrecorder"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="insync.py"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="variety"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="bluetooth"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="gpick"/>
+        <value type="string" value="clipit"/>
+        <value type="string" value="dropbox"/>
+      </property>
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="zoom"/>
+        <value type="string" value="simplescreenrecorder"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="xfce terminal"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="insync"/>
+        <value type="string" value="variety"/>
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="flameshot"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="clipman"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “jiofiber-4g” active: jiofiber-4g (47%)"/>
+        <value type="string" value="clipman"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="variety"/>
+      </property>
+      <property name="icon-size" type="int" value="0"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="hide-new-items" type="bool" value="true"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="hidden-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “jiofiber-4g” active: jiofiber-4g (47%)"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="whiskermenu">
+      <property name="button-title" type="string" value="ArcoLinux  "/>
+      <property name="button-icon" type="string" value="distributor-logo-archlinux"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="hover-switch-category" type="bool" value="true"/>
+      <property name="category-icon-size" type="int" value="2"/>
+      <property name="favorites-in-recent" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="position-commands-alternate" type="bool" value="true"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="410"/>
+      <property name="menu-height" type="int" value="583"/>
+      <property name="menu-opacity" type="int" value="80"/>
+      <property name="command-lockscreen" type="string" value="archlinux-logout"/>
+      <property name="command-switchuser" type="string" value="xfce4-session-logout -u"/>
+      <property name="show-command-switchuser" type="bool" value="true"/>
+      <property name="favorites" type="array">
+        <value type="string" value="arcolinux-welcome-app.desktop"/>
+        <value type="string" value="archlinux-tweak-tool.desktop"/>
+        <value type="string" value="firefox.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="conkyzen.desktop"/>
+      </property>
+      <property name="recent" type="array">
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="xfce4-settings-editor.desktop"/>
+        <value type="string" value="xfce-wmtweaks-settings.desktop"/>
+        <value type="string" value="xfce-theme-manager.desktop"/>
+        <value type="string" value="xfce-backdrop-settings.desktop"/>
+        <value type="string" value="xfce-display-settings.desktop"/>
+      </property>
+      <property name="search-actions" type="int" value="7">
+        <property name="action-0" type="empty">
+          <property name="name" type="string" value="Man Pages"/>
+          <property name="pattern" type="string" value="#"/>
+          <property name="command" type="string" value="exo-open --launch TerminalEmulator man %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-1" type="empty">
+          <property name="name" type="string" value="Search the Web"/>
+          <property name="pattern" type="string" value="?"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://duckduckgo.com/?q=%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-2" type="empty">
+          <property name="name" type="string" value="Search for Files"/>
+          <property name="pattern" type="string" value="-"/>
+          <property name="command" type="string" value="catfish --path=~ --start %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-3" type="empty">
+          <property name="name" type="string" value="Wikipedia"/>
+          <property name="pattern" type="string" value="!w"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-4" type="empty">
+          <property name="name" type="string" value="Run in Terminal"/>
+          <property name="pattern" type="string" value="!"/>
+          <property name="command" type="string" value="exo-open --launch TerminalEmulator %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-5" type="empty">
+          <property name="name" type="string" value="Open URI"/>
+          <property name="pattern" type="string" value="^(file|http|https):\/\/(.*)$"/>
+          <property name="command" type="string" value="exo-open \0"/>
+          <property name="regex" type="bool" value="true"/>
+        </property>
+        <property name="action-6" type="empty">
+          <property name="name" type="string" value="Web Search"/>
+          <property name="pattern" type="string" value="?"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://google.com/?q=%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+      </property>
+    </property>
+    <property name="clipman" type="empty">
+      <property name="tweaks" type="empty">
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="pragha;spotify"/>
+      <property name="known-players" type="string" value="firefox"/>
+    </property>
+  </property>
+</channel>
