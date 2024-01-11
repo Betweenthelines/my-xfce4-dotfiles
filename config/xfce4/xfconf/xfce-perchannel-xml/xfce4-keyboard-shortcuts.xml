@@ -69,7 +69,7 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;asciicircum" type="string" value="/home/dreaming/.local/share/applications/rice/Robust.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;ampersand" type="string" value="/home/dreaming/.local/share/applications/rice/true-dark.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;percent" type="string" value="/home/dreaming/.local/share/applications/rice/Everforest.sh"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="xfce4-terminal -e &apos;dstat -d&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;d" type="string" value="xfce4-terminal  --geometry=15x19 -e  &apos;dool -d&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-terminal --hold  -e &apos;clear &amp;&amp; vnstat -l&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="xfce4-terminal ranger"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;exclam" type="string" value="/home/dreaming/.local/share/applications/rice/light.sh"/>
