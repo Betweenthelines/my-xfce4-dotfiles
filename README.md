@@ -16,6 +16,9 @@ now open terminal in the directory my-xfce4-dotfiles and type <br />
 Arch only xfce4 dotfiles I have implemented backup system for another person.<br />
 But I urge you to go through my scripts so that you can prepare or any unforseen result<br />
 XFCE4 is also a prerequisite
+If you don't know or are reading this from phone type 
+`sudo pacman -S xfce4 xfce4-goodies mousepad xfwm4 `
+It will install xfce4 desktop install any login manager I use LightDM. `sudo pacman -S lightdm`
 
 # As of 2023-24 
 Many scripts regarding xfce4-terminal would have break for many users. Its fixed for now but and all colorschemes and script to instantly change colorschemes in xfce4-terminal should work now. If my script has any error in your setup please do inform so I can fix the script. 
