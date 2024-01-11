@@ -6,7 +6,7 @@ MONITOR=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
 xfconf-query --channel xfce4-desktop --property /backdrop/screen${SCREEN}/monitor${MONITOR}/workspace0/last-image --set ~/Pictures/wall/gruvbox-horo.jpg
 
 ##xfce icons
-xfconf-query -c xsettings -p /Net/IconThemeName -s Mint-Y-Legacy
+xfconf-query -c xsettings -p /Net/IconThemeName -s Mint-L
 
 ##xfce style
 xfconf-query -c xsettings -p /Net/ThemeName -s Mint-Y
