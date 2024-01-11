@@ -97,7 +97,7 @@ read -p "Do you wish to install zsh? (Yy/Nn)" yn
 done
 
 echo '## starship prompt zsh I just like it better###' 
-sudo pacman -S starship picom
+sudo pacman -S starship
 
 ## mpv screenshot directory
 mkdir -pv ~/Pictures/mpv && cp -r /usr/share/doc/mpv/ ~/.config/
