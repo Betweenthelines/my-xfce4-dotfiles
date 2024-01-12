@@ -22,9 +22,9 @@ xfconf-query -c xfwm4 -p /general/theme -s Nordic-bluish-accent-v40
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 ## terminal theme since 2023
-xfconf-query -c xfce4-terminal -p /color-background -s 353C4A
-xfconf-query -c xfce4-terminal -p /color-foreground -s F8F8F2
-xfconf-query -c xfce4-terminal -p /color-cursor -s F8F8F2
+xfconf-query -c xfce4-terminal -p /color-background -s '#353C4A'
+xfconf-query -c xfce4-terminal -p /color-foreground -s '#F8F8F2'
+xfconf-query -c xfce4-terminal -p /color-cursor -s '#F8F8F2'
 xfconf-query -c xfce4-terminal -p /color-palette -s '#21222C;#FF5555;#50FA7B;#F1FA8C;#BD93F9;#FF79C6;#8BE9FD;#F8F8F2;#6272A4;#FF6E6E;#69FF94;#FFFFA5;#D6ACFF;#FF92DF;#A4FFFF;#FFFFFF'
 
 ##polybar
