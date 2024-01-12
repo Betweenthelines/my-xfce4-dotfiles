@@ -22,9 +22,9 @@ xfconf-query -c xfwm4 -p /general/theme -s Mint-Y-Dark
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 ## terminal theme since 2023
-xfconf-query -c xfce4-terminal -p /color-background -s 3c953c953c95
+xfconf-query -c xfce4-terminal -p /color-background -s '#3c953c953c95'
 xfconf-query -c xfce4-terminal -p /color-foreground -s x
-xfconf-query -c xfce4-terminal -p /color-cursor -s 867f81c281c2
+xfconf-query -c xfce4-terminal -p /color-cursor -s '#867f81c281c2'
 xfconf-query -c xfce4-terminal -p /color-palette -s '#000000;#cc0000;#4e9a06;#c4a000;#3465a4;#75507b;#06989a;#d3d7cf;#8E9F7D;#ef2929;#8ae234;#fce94f;#739fcf;#ad7fa8;#34e2e2;#eeeeec'
 
 ##polybar
