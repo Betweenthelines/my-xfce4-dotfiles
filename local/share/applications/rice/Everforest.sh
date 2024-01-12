@@ -22,8 +22,8 @@ xfconf-query -c xfwm4 -p /general/theme -s Everforest-Dark-Borderless
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 ## terminal theme since 2023
-xfconf-query -c xfce4-terminal -p /color-background -s 1e2327
-xfconf-query -c xfce4-terminal -p /color-foreground -s A7080
+xfconf-query -c xfce4-terminal -p /color-background -s '#1e2327'
+xfconf-query -c xfce4-terminal -p /color-foreground -s '#A7080'
 xfconf-query -c xfce4-terminal -p /color-palette -s '#1d2021;#cc241d;#98971a;#d79921;#458588;#b16286;#689d6a;#a89984;#928374;#fb4934;#b8bb26;#fabd2f;#83a598;#d3869b;#8ec07c;#ebdbb2'
 xfconf-query -c xfce4-terminal -p /color-cursor -s x
 
