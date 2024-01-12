@@ -22,9 +22,9 @@ xfconf-query -c xfwm4 -p /general/theme -s Nelio-Red-Slimmer
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 1"
 
 ## terminal theme since 2023
-xfconf-query -c xfce4-terminal -p /color-background -s 2F343F
-xfconf-query -c xfce4-terminal -p /color-foreground -s D8DEE9
-xfconf-query -c xfce4-terminal -p /color-cursor -s D8DEE9
+xfconf-query -c xfce4-terminal -p /color-background -s '#2F343F'
+xfconf-query -c xfce4-terminal -p /color-foreground -s '#D8DEE9'
+xfconf-query -c xfce4-terminal -p /color-cursor -s '#D8DEE9'
 xfconf-query -c xfce4-terminal -p /color-palette -s '#3B4252;#BF616A;#A3BE8C;#EBCB8B;#81A1C1;#B48EAD;#88C0D0;#E5E9F0;#647390;#BF616A;#A3BE8C;#EBCB8B;#81A1C1;#B48EAD;#8FBCBB;#ECEFF4'
 
 ##polybar
