@@ -21,10 +21,10 @@ xfconf-query -c xfwm4 -p /general/theme -s Gruvbox-Material-Dark
 xfconf-query -c xfwm4 -p /general/title_font -s "Sans Bold 10"
 
 #terminal
-xfconf-query -c xfce4-terminal -p /color-background -s 32302F
-xfconf-query -c xfce4-terminal -p /color-foreground -s f8f8f2
+xfconf-query -c xfce4-terminal -p /color-background -s '#32302F'
+xfconf-query -c xfce4-terminal -p /color-foreground -s '#f8f8f2'
 xfconf-query -c xfce4-terminal -p /color-palette -s '#272822;#f92672;#a6e22e;#f4bf75;#66d9ef;#ae81ff;#a1efe4;#f8f8f2;#75715e;#f92672;#a6e22e;#f4bf75;#66d9ef;#ae81ff;#a1efe4;#f9f8f5'
-xfconf-query -c xfce4-terminal -p /color-cursor -s f8f8f2
+xfconf-query -c xfce4-terminal -p /color-cursor -s '#f8f8f2'
 
 ##polybar
 cd ~/.config/polybar 
