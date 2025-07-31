@@ -87,6 +87,10 @@ and type property screen monitor and workspace property which we have noted befo
 Also please note that the wallpaper script is one time use actually because of my lack of knowledge in coding.
 Also monitor is NOT the one shown in xrandr but one shown with `xfconf-query -c xfce4-desktop -m` this is a limitation of xfce4 for the moment
 
+AUGUST 2025 - tired of polybar as of now 
+            - made xfce4-panel as close to polybar as you see in pictures.
+            now can be used without polybar
+
 # My custom Windows Keybindings should also be transferred 
 _______________________________________________________________
 <br />  Super + Arrow kews          (window tiling)          
