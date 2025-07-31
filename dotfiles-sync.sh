@@ -14,6 +14,14 @@ cp themer.sh ~/.local/share/applications/rice/themer.sh
 find $HOME/.local/share/applications/rice -type f -print0 | xargs -0 chmod 775
 find $HOME/.local/share/applications -type f -print0 | xargs -0 chmod 775
 
+# for xfce4 panel
+chmod +x ~/.config/panel/cpu.sh
+chmod +x ~/.config/panel/network.sh
+chmod +x ~/.config/panel/ram.sh
+chmod +x ~/.config/panel/storage.sh
+chmod +x ~/.config/panel/time.sh
+sed -i -e 's/higurashi/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+
 cp ftp.sh ~/.ftp.sh
 cp ftp2.sh ~/.ftp2.sh
 cp themer.sh ~/.local/share/applications/rice/themer.sh
