@@ -91,6 +91,9 @@ AUGUST 2025 - tired of polybar as of now
             - made xfce4-panel as close to polybar as you see in pictures.
             now can be used without polybar
 
+2026- removed polybar i am going full xfce current setup does things like this (added python-psutil as a requirement its much easier)
+![link to image](https://raw.githubusercontent.com/Betweenthelines/my-xfce4-dotfiles/main/Picture/wall/bar.png)
+
 # My custom Windows Keybindings should also be transferred 
 _______________________________________________________________
 <br />  Super + Arrow kews          (window tiling)          
