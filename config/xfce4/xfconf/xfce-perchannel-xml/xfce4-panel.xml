@@ -7,11 +7,11 @@
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=9;x=960;y=21"/>
       <property name="length" type="double" value="100"/>
-      <property name="size" type="uint" value="36"/>
+      <property name="size" type="uint" value="27"/>
       <property name="background-style" type="int" value="2"/>
       <property name="background-alpha" type="int" value="80"/>
-      <property name="enter-opacity" type="uint" value="95"/>
-      <property name="leave-opacity" type="uint" value="90"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
       <property name="dark-mode" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
@@ -20,17 +20,14 @@
         <value type="int" value="1"/>
         <value type="int" value="10"/>
         <value type="int" value="3"/>
-        <value type="int" value="13"/>
-        <value type="int" value="14"/>
-        <value type="int" value="5"/>
+        <value type="int" value="2"/>
         <value type="int" value="8"/>
         <value type="int" value="6"/>
-        <value type="int" value="2"/>
         <value type="int" value="11"/>
-        <value type="int" value="15"/>
       </property>
-      <property name="enable-struts" type="bool" value="false"/>
+      <property name="enable-struts" type="bool" value="true"/>
       <property name="position-locked" type="bool" value="true"/>
+      <property name="mode" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -41,10 +38,6 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-2" type="string" value="actions">
-      <property name="button-title" type="uint" value="3"/>
-      <property name="custom-title" type="string" value="uwu"/>
-    </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="items" type="array">
         <value type="string" value="/usr/share/applications/firefox.desktop"/>
@@ -54,8 +47,26 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “jj” active: jj (73%)"/>
+        <value type="string" value="wi-fi network connection “jj” active: jj (68%)"/>
+        <value type="string" value="wi-fi network connection “jj” active: jj (58%)"/>
+        <value type="string" value="wi-fi network connection “jj” active: jj (62%)"/>
+        <value type="string" value="wi-fi network connection “jj” active: jj (66%)"/>
+        <value type="string" value="ethernet network connection “wired connection 1” active"/>
+        <value type="string" value="caffeine-indicator"/>
+        <value type="string" value="ethernet network connection “wired connection 2” active"/>
+        <value type="string" value="no network connection"/>
+        <value type="string" value="pulseaudio system tray"/>
+        <value type="string" value="pasystray"/>
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="wi-fi network connection “jj” active: jj (77%)"/>
         <value type="string" value="xdm-app"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="blueman"/>
+        <value type="string" value="caffeine-cup-empty"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="flameshot"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="whiskermenu"/>
@@ -71,7 +82,7 @@
     </property>
     <property name="plugin-10" type="string" value="genmon">
       <property name="expand" type="bool" value="true"/>
-      <property name="command" type="string" value="/home/higurashi/.config/panel/time.sh"/>
+      <property name="command" type="string" value="/home/higurashi/.config/panel/time.py"/>
       <property name="use-label" type="bool" value="false"/>
       <property name="text" type="string" value=""/>
       <property name="update-period" type="int" value="30000"/>
@@ -83,37 +94,13 @@
       <property name="style" type="uint" value="0"/>
       <property name="expand" type="bool" value="true"/>
     </property>
-    <property name="plugin-13" type="string" value="genmon">
-      <property name="command" type="string" value="/home/higurashi/.config/panel/cpu.sh"/>
-      <property name="use-label" type="bool" value="true"/>
-      <property name="text" type="string" value=" "/>
-      <property name="update-period" type="int" value="10000"/>
-      <property name="enable-single-row" type="bool" value="true"/>
-      <property name="font" type="string" value="Cantarell 13"/>
-    </property>
-    <property name="plugin-14" type="string" value="genmon">
-      <property name="command" type="string" value="/home/higurashi/.config/panel/ram.sh"/>
-      <property name="use-label" type="bool" value="true"/>
-      <property name="text" type="string" value=" "/>
-      <property name="update-period" type="int" value="10000"/>
-      <property name="enable-single-row" type="bool" value="true"/>
-      <property name="font" type="string" value="Cantarell 13"/>
-    </property>
-    <property name="plugin-15" type="string" value="genmon">
-      <property name="command" type="string" value="/home/higurashi/.config/panel/network.sh"/>
-      <property name="use-label" type="bool" value="true"/>
-      <property name="text" type="string" value=""/>
-      <property name="update-period" type="int" value="5000"/>
-      <property name="enable-single-row" type="bool" value="true"/>
-      <property name="font" type="string" value="Cantarell 13"/>
-    </property>
-    <property name="plugin-5" type="string" value="genmon">
-      <property name="command" type="string" value="/home/higurashi/.config/panel/storage.sh"/>
+    <property name="plugin-2" type="string" value="genmon">
+      <property name="command" type="string" value="/home/higurashi/.config/panel/exp.py"/>
       <property name="use-label" type="bool" value="false"/>
       <property name="text" type="string" value="(genmon)"/>
-      <property name="update-period" type="int" value="30000"/>
+      <property name="update-period" type="int" value="10000"/>
       <property name="enable-single-row" type="bool" value="true"/>
-      <property name="font" type="string" value="Cantarell 13"/>
+      <property name="font" type="string" value="JetBrainsMonoNL Nerd Font Propo Medium 10"/>
     </property>
   </property>
 </channel>
