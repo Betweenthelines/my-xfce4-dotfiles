@@ -19,6 +19,7 @@ sed -i -e 's/dreaming/'$first'/g' ~/.local/share/applications/rice/Everforest.de
 
 ##for keybindings
 sed -i -e 's/dreaming/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+sed -i -e 's/higurashi/'$first'/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 
 ## for polybar to work properly
 polymonitor=$(xrandr --listactivemonitors | awk -F ' ' 'END {print $2}' | tr -d \*+)
