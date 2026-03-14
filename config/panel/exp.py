@@ -18,31 +18,40 @@ ram = psutil.virtual_memory().percent
 # DISK
 disk = psutil.disk_usage("/").percent
 
-# NETWORK
-iface = subprocess.check_output(
-    "ip route get 1 | awk '{print $5; exit}'",
-    shell=True
-).decode().strip()
 
-rx1 = int(open(f"/sys/class/net/{iface}/statistics/rx_bytes").read())
-tx1 = int(open(f"/sys/class/net/{iface}/statistics/tx_bytes").read())
+# NETWORK (safe version)
+down_h = "0K"
+up_h = "0K"
 
-time.sleep(0.5)
+try:
+    iface = subprocess.check_output(
+        "ip route get 1 | awk '{print $5; exit}'",
+        shell=True,
+        stderr=subprocess.DEVNULL
+    ).decode().strip()
 
-rx2 = int(open(f"/sys/class/net/{iface}/statistics/rx_bytes").read())
-tx2 = int(open(f"/sys/class/net/{iface}/statistics/tx_bytes").read())
+    rx1 = int(open(f"/sys/class/net/{iface}/statistics/rx_bytes").read())
+    tx1 = int(open(f"/sys/class/net/{iface}/statistics/tx_bytes").read())
 
-down = rx2 - rx1
-up = tx2 - tx1
+    time.sleep(0.5)
 
+    rx2 = int(open(f"/sys/class/net/{iface}/statistics/rx_bytes").read())
+    tx2 = int(open(f"/sys/class/net/{iface}/statistics/tx_bytes").read())
 
-def format_speed(b):
-    if b > 1048576:
-        return f"{b/1048576:.1f}M"
-    return f"{int(b/1024)}K"
+    down = rx2 - rx1
+    up = tx2 - tx1
 
-down_h = format_speed(down)
-up_h = format_speed(up)
+    def format_speed(b):
+        if b > 1048576:
+            return f"{b/1048576:.1f}M"
+        return f"{int(b/1024)}K"
+
+    down_h = format_speed(down)
+    up_h = format_speed(up)
+
+except Exception:
+    pass
+
 
 cpu_bar = bar(cpu, 10)
 ram_bar = bar(ram, 12)
